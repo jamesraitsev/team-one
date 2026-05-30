@@ -1,0 +1,76 @@
+name: GTM Council
+version: 0.1.0
+purpose: >
+  Multi-agent strategic evaluation council for startup ideas, positioning,
+  go-to-market strategy, monetization, market demand, moats, and operational realism.
+
+entrypoint:
+  agent: council-director
+  path: agents/council-director.md
+  default_workflow: workflows/director-led-evaluation.md
+
+shared:
+  principles: shared/principles.md
+  evidence_standards: shared/evidence-standards.md
+  voting: shared/voting.md
+  agent_contract: shared/agent-contract.md
+
+agents:
+  - id: council-director
+    name: Council Director
+    path: agents/council-director.md
+    domain: Orchestration, debate quality, synthesis, and process integrity
+  - id: market-research-lead
+    name: Market Research Lead
+    path: agents/market-research-lead.md
+    domain: Pain, demand, alternatives, and switching friction
+  - id: moat-positioning-analyst
+    name: Moat & Positioning Analyst
+    path: agents/moat-positioning-analyst.md
+    domain: Defensibility, differentiation, positioning, and incumbent risk
+  - id: product-ux-strategist
+    name: Product & UX Strategist
+    path: agents/product-ux-strategist.md
+    domain: Onboarding, usability, retention, workflow fit, and simplicity
+  - id: growth-distribution-strategist
+    name: Growth & Distribution Strategist
+    path: agents/growth-distribution-strategist.md
+    domain: Acquisition, channels, sales motion, and CAC realism
+  - id: technical-operational-advisor
+    name: Technical & Operational Advisor
+    path: agents/technical-operational-advisor.md
+    domain: Feasibility, scalability, compliance, reliability, and operational burden
+  - id: financial-realism-advisor
+    name: Financial Realism Advisor
+    path: agents/financial-realism-advisor.md
+    domain: Pricing, margins, monetization, unit economics, and sustainability
+  - id: contrarian-critic
+    name: Contrarian Critic
+    path: agents/contrarian-critic.md
+    domain: Blind spots, hype detection, unrealistic assumptions, and failure modes
+
+workflows:
+  director_led_evaluation: workflows/director-led-evaluation.md
+  direct_specialist_review: workflows/direct-specialist-review.md
+  quick_screen: workflows/quick-screen.md
+
+frameworks:
+  standard_evaluation: frameworks/standard-evaluation.md
+  debate_protocol: frameworks/debate-protocol.md
+  agent_activation: frameworks/agent-activation.md
+
+templates:
+  evaluation_brief: templates/evaluation-brief.md
+  specialist_response: templates/specialist-response.md
+  vote_card: templates/vote-card.md
+  final_report: templates/final-report.md
+
+test_briefs:
+  behavior_verification: test-briefs/README.md
+
+vote_scale:
+  - Strong Pursue
+  - Pursue
+  - Neutral
+  - Concerned
+  - Strong Reject
