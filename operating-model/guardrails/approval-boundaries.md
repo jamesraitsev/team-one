@@ -1,0 +1,79 @@
+---
+aliases:
+  - Approval Boundaries
+  - Human Approval Boundaries
+---
+
+# Approval Boundaries
+
+This note defines what agents may do without approval and what always requires approval.
+
+Use it with [[guardrails|Guardrails]], [[autonomy-ramp|Autonomy Ramp]], [[agent-approval-rules|Agent Approval Rules]], and [[approval-queues|Approval Queues]].
+
+## Safe To Do Without Approval
+
+Once visibility and auditability are working, agents may do these without approval:
+
+- read approved records
+- update runtime status files
+- update daily memory and journals
+- draft dashboard-ready outputs
+- draft recommendations
+- prepare approval packets
+- create or update safe internal artifacts
+- fix obvious links and metadata gaps
+- run tests and reviews
+- summarize customer, quality, security, and cost signals
+- perform backlog hygiene that does not change commitments or investment
+
+## Always Requires Approval
+
+These actions always require explicit human approval:
+
+- deploys
+- spending
+- public posting
+- data deletion
+- architecture changes
+
+## Also Approval-Gated
+
+These should also require approval unless a narrower documented automation policy exists:
+
+- permission changes
+- auth changes
+- secret-handling changes
+- accepted unresolved quality risk
+- accepted unresolved security risk
+- material reprioritization that changes scope or investment
+- Accepted decision overrides or supersessions
+
+## Boundary Test
+
+If an agent is unsure whether an action is safe, ask:
+
+1. Does this change an external system or customer-visible state.
+2. Does this increase financial, legal, security, or operational exposure.
+3. Does this delete, publish, deploy, or permanently reshape behavior.
+4. Would a human reasonably expect to review this before it happens.
+
+If the answer might be yes, route it to approval instead of treating it as autonomous.
+
+## Approval Packet Minimum
+
+When an approval is required, the agent should state:
+
+- the exact action
+- why the action is needed
+- what happens if approved
+- what happens if rejected
+- what happens if deferred
+- what records support the request
+
+## Related
+
+- [[guardrails|Guardrails]]
+- [[autonomy-ramp|Autonomy Ramp]]
+- [[safe-actions|Safe Actions]]
+
+<!-- Reviewed and Approved on -->
