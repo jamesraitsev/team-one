@@ -7,6 +7,21 @@ aliases:
 
 # Autonomy Ramp
 
+## Before You Edit This File
+
+Frame of mind: This file defines how agents earn more freedom. Autonomy should increase only after visibility, audit trail, and approval routing work.
+
+Ask yourself before changing it:
+- What capability must exist before the next autonomy level?
+  Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
+- Can the dashboard show what changed, why, and what still needs approval?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- What actions remain permanently human-gated?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+
+Cross-check [[guardrails|Guardrails]], [[approval-boundaries|Approval Boundaries]], [[dashboard/README|Dashboard Specification]], and [[agent-approval-rules|Agent Approval Rules]].
+
+
 This note defines how autonomy increases over time.
 
 Use it with [[guardrails|Guardrails]], [[dashboard/README|Dashboard Specification]], [[agent-approval-rules|Agent Approval Rules]], and [[agent-workflows|Agent Workflows]].

@@ -8,6 +8,21 @@ aliases:
 
 # DR-0001: SOP Library Location And Governance
 
+## Before You Edit This File
+
+Frame of mind: This decision explains why reusable SOPs live outside `source-of-truth/`. Edit it only if the SOP authority model or folder contract changes.
+
+Ask yourself before changing it:
+- Is `sop-library/` still a reusable operating asset rather than an initiative record store?
+  Prompt: State whether this belongs in a reusable SOP, an agent workflow, or a one-time record.
+- Do SOP outputs still write back to approved durable folders or issues?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- Would this change require updating the file-and-folder contract?
+  Prompt: Answer in plain English first, then decide which file or decision record should hold the final version.
+
+Cross-check [[sop-library/README|SOP Library]], [[source-of-truth/files-and-folders|Files And Folders]], and [[sop-registry|SOP Registry]].
+
+
 ## Metadata
 
 | Field | Value |

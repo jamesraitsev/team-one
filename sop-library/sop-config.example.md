@@ -6,6 +6,21 @@ aliases:
 
 # SOP Config Example
 
+## Before You Edit This File
+
+Frame of mind: This file is configuration guidance, not live configuration. Keep it generic and never add secrets.
+
+Ask yourself before changing it:
+- Is this example needed for local, shared-repo, or override SOP resolution?
+  Prompt: State whether this belongs in a reusable SOP, an agent workflow, or a one-time record.
+- Does it avoid real tokens, private paths, and unapproved authority changes?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- Does it explain which source wins when multiple SOP locations exist?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+
+Cross-check [[sop-usage-rules|SOP Usage Rules]], [[source-of-truth/github|GitHub]], and [[AGENTS|AGENTS.md]].
+
+
 This file shows the expected configuration shape for the SOP system. It is documentation only, not a live config file.
 
 | Field | Example value | Purpose |

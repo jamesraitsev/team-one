@@ -5,6 +5,21 @@ aliases:
 
 # Agent Status Template
 
+## Before You Edit This File
+
+Frame of mind: This template should be easy to copy during a real run. It needs enough structure for the dashboard, without becoming paperwork.
+
+Ask yourself before changing it:
+- Can a user see current task, blocker, approval state, confidence, and next action quickly?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- Are links to issues, SOPs, decisions, and artifacts built in?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- Does it avoid duplicating journal or decision content?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+
+Cross-check [[agent-status-file-contract|Agent Status File Contract]], [[agent-status-rules|Agent Status Rules]], and [[source-of-truth/agent-status/index|Agent Status Index]].
+
+
 Use this template for one runtime status file per active agent in `source-of-truth/agent-status/`.
 
 ```md

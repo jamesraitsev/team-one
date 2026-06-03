@@ -5,6 +5,21 @@ aliases:
 
 # Validation Planning
 
+## Before You Edit This File
+
+Frame of mind: This SOP defines how an idea earns evidence before planning. Think in assumptions, tests, risks, and what would change the decision.
+
+Ask yourself before changing it:
+- What must be true for this idea to be worth planning?
+  Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
+- What evidence will reduce market, user, technical, or operational uncertainty?
+  Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
+- What result would make us pause, narrow, or kill it?
+  Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
+
+Cross-check [[idea-triage|Idea Triage]], [[decision-gates|Decision Gates]], and [[agents/agent-roster|Agent Roster]].
+
+
 Version: `v1.0`
 
 ## Purpose

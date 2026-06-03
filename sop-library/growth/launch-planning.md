@@ -5,6 +5,21 @@ aliases:
 
 # Launch Planning
 
+## Before You Edit This File
+
+Frame of mind: This SOP defines launch readiness. Keep the focus on audience, channel, proof, risk, timing, and go/no-go decision quality.
+
+Ask yourself before changing it:
+- Who is the launch for, and what action should they take?
+  Prompt: Name the accountable person or role; if unclear, write `Unassigned` rather than guessing.
+- What evidence says the product, messaging, and support path are ready?
+  Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
+- What public, spend, or timing decisions require approval?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+
+Cross-check [[content-approval|Content Approval]], [[copy-review|Copy Review]], and [[dashboard/common-spec|Common Dashboard Spec]].
+
+
 Version: `v1.0`
 
 ## Purpose

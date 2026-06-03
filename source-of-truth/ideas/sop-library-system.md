@@ -6,6 +6,21 @@ aliases:
 
 # SOP Library System
 
+## Before You Edit This File
+
+Frame of mind: This is the idea record behind the SOP library. Keep it focused on why reusable procedures matter, not on detailed SOP execution.
+
+Ask yourself before changing it:
+- What problem does the SOP library solve for agents and humans?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- What decisions depend on this idea?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+- Is the idea still active, accepted, deferred, or superseded?
+  Prompt: Mark the item as live now, planned later, or out of scope; do not leave it implied.
+
+Cross-check [[dr-0001-sop-library-location-and-governance|DR-0001]], [[sop-library/README|SOP Library]], and [[sop-registry|SOP Registry]].
+
+
 ## Summary
 
 Create one reusable SOP library for agent and project workflows, with SDLC as one category rather than the entire system.

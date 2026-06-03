@@ -5,6 +5,21 @@ aliases:
 
 # Agent Status Dashboard Contract
 
+## Before You Edit This File
+
+Frame of mind: This file tells the dashboard how to read agent status. Be precise so the dashboard never invents state.
+
+Ask yourself before changing it:
+- Which status fields may appear on cards and queues?
+  Prompt: Describe what the human should see or do from the dashboard in one practical sentence.
+- How should stale, missing, blocked, and approval-needed status be shown?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- What conflicts should block dashboard actions?
+  Prompt: Describe what the human should see or do from the dashboard in one practical sentence.
+
+Cross-check [[dashboard/common-spec|Common Dashboard Spec]], [[dashboard/common-spec|Common Dashboard Spec]], and [[agent-status-file-contract|Agent Status File Contract]].
+
+
 This file defines how the dashboard should render agent runtime status from `source-of-truth/agent-status/`.
 
 Use it with:

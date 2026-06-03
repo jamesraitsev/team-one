@@ -5,6 +5,21 @@ aliases:
 
 # Agent Permission Review
 
+## Before You Edit This File
+
+Frame of mind: This SOP reviews what agents may do. It should keep autonomy aligned with visibility, approvals, and safety boundaries.
+
+Ask yourself before changing it:
+- What permissions does the agent actually need?
+  Prompt: Name the exposure, who can approve the risk, and what evidence proves it is controlled.
+- Which actions require human approval no matter what?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- Can dashboard and status records show what the agent did?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+
+Cross-check [[approval-boundaries|Approval Boundaries]], [[autonomy-ramp|Autonomy Ramp]], and [[agents/agent-approval-rules|Agent Approval Rules]].
+
+
 Version: `v1.0`
 
 ## Purpose

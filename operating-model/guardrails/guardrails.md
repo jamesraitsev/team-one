@@ -6,9 +6,24 @@ aliases:
 
 # Guardrails
 
+## Before You Edit This File
+
+Frame of mind: This is the safety layer. It should state non-negotiable limits that agent-specific rules cannot weaken.
+
+Ask yourself before changing it:
+- What risks must always stop or escalate work?
+  Prompt: Name the risk, severity, and the smallest safe next step.
+- Which actions are never autonomous regardless of agent role?
+  Prompt: Answer in plain English first, then decide which file or decision record should hold the final version.
+- Does this rule protect humans from hidden cost, security, legal, or public-impact exposure?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+
+Cross-check [[approval-boundaries|Approval Boundaries]], [[safe-actions|Safe Actions]], [[autonomy-ramp|Autonomy Ramp]], and [[agents/agent-approval-rules|Agent Approval Rules]].
+
+
 This folder defines the autonomy and approval guardrails for the operating model.
 
-Use it with [[operating-model/README|Operating Model Overview]], [[dashboard/README|Dashboard Specification]], [[agent-approval-rules|Agent Approval Rules]], [[decision-gates|Decision Gates]], and [[approval-queues|Approval Queues]].
+Use it with [[operating-model/README|Operating Model Overview]], [[dashboard/README|Dashboard Specification]], [[agent-approval-rules|Agent Approval Rules]], [[decision-gates|Decision Gates]], and [[dashboard/common-spec|Common Dashboard Spec]].
 
 ## Purpose
 

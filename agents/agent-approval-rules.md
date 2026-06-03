@@ -6,9 +6,24 @@ aliases:
 
 # Agent Approval Rules
 
-This file defines what each scheduled agent may do alone and what requires approval.
+## Before You Edit This File
 
-Use it with [[agent-workflows|Agent Workflows]], [[agent-output-contracts|Agent Output Contracts]], [[guardrails|Guardrails]], [[dashboard/approval-queues|Approval Queues]], and [[operating-model/agent-status-schema/agent-status-rules|Agent Status Rules]].
+Frame of mind: This file specializes approval rules for agents. It may tighten global guardrails, but it must never weaken them.
+
+Ask yourself before changing it:
+- What may each agent do alone?
+  Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
+- What requires explicit human approval?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- Does any rule accidentally let an agent approve its own work, spend, deploy, publish, delete, or change architecture?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+
+Cross-check [[approval-boundaries|Approval Boundaries]], [[guardrails|Guardrails]], [[agent-responsibilities|Agent Responsibilities]], and [[dashboard/common-spec|Common Dashboard Spec]].
+
+
+This file defines what each agent may do alone and what requires approval.
+
+Use it with [[agent-workflows|Agent Workflows]], [[agent-output-contracts|Agent Output Contracts]], [[guardrails|Guardrails]], [[dashboard/common-spec|Common Dashboard Spec]], and [[operating-model/agent-status-schema/agent-status-rules|Agent Status Rules]].
 
 ## Autonomy Activation Rule
 
@@ -26,7 +41,7 @@ See [[autonomy-ramp|Autonomy Ramp]], [[approval-boundaries|Approval Boundaries]]
 
 ## Global Approval Rules
 
-Scheduled agents may do alone:
+Agents may do alone:
 
 - read approved source records
 - summarize and compare evidence
@@ -37,7 +52,7 @@ Scheduled agents may do alone:
 - create or update approval queue items
 - draft decision updates when the governing SOP permits drafting without acceptance
 
-Scheduled agents require explicit human approval for:
+Agents require explicit human approval for:
 
 - public posting
 - deploys
@@ -50,7 +65,7 @@ Scheduled agents require explicit human approval for:
 - Accepted decision overrides or supersessions
 - material reprioritization that changes scope or investment
 
-Scheduled agents must never:
+Agents must never:
 
 - approve their own work
 - treat silence as approval
@@ -81,12 +96,13 @@ If the action stops meeting those conditions, route it to approval immediately.
 | QA / Release Reviewer | Evaluate test evidence, visual quality, acceptance criteria, and release readiness. | Merge or deploy approval, or accepting unresolved regression risk. |
 | Security / Secrets Reviewer | Evaluate secret handling, dependencies, auth, permissions, and risk severity. | Permission changes, secret handling changes, deploys with unresolved high-severity risk, or accepted security exceptions. |
 | Customer Signal Reviewer | Summarize user evidence, group themes, and recommend product or growth follow-up. | Scope, timing, public response, or investment changes driven by the signal. |
+| Linda | Audit repo health, score clarity and consistency, write Linda memory, challenge the operator, and draft must-look recommendations. | Accepting structural decisions, changing authority, moving or deleting files, changing source-of-truth contracts, or approving her own recommendations. |
 | Source-of-Truth Steward | Detect broken links, missing backlinks, stale status records, orphan artifacts, and durable-record conflicts, and draft the smallest safe corrective action. | Any corrective action that changes Accepted decisions, rewrites approved durable records materially, resolves record conflicts by judgment instead of evidence, or requires live GitHub changes. |
 | Decision Record Steward | Detect stale, missing, conflicting, or superseded decisions and draft review actions. | Accepting, rejecting, or superseding load-bearing decisions. |
 
 ## Approval Queue Requirements
 
-When approval is required, the scheduled agent must:
+When approval is required, the agent must:
 
 1. set `Needs approval` to `Yes` in the runtime status file
 2. set `Status` to `Needs Approval` unless another blocker is more accurate
@@ -97,7 +113,7 @@ When approval is required, the scheduled agent must:
 
 ## Stop Conditions
 
-Scheduled agents must stop and escalate when:
+Agents must stop and escalate when:
 
 - the source-of-truth contract is missing or unclear
 - a required decision record is missing
@@ -111,7 +127,7 @@ Scheduled agents must stop and escalate when:
 
 - [[agent-output-contracts|Agent Output Contracts]]
 - [[agent-dashboard-routing|Agent Dashboard Routing]]
-- [[dashboard/approval-queues|Approval Queues]]
+- [[dashboard/common-spec|Common Dashboard Spec]]
 - [[guardrails|Guardrails]]
 
 <!-- Reviewed and Approved on -->

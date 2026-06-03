@@ -6,13 +6,28 @@ aliases:
 
 # Agent Workflows
 
-This file defines what each scheduled agent does step by step.
+## Before You Edit This File
+
+Frame of mind: This file defines agent orchestration, not every procedural detail. Keep workflows focused on read, status, review, route, approval, and write behavior.
+
+Ask yourself before changing it:
+- What records must the agent read first?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- Which SOPs does it run instead of duplicating steps here?
+  Prompt: State whether this belongs in a reusable SOP, an agent workflow, or a one-time record.
+- When must it stop for approval, missing configuration, or source-of-truth conflict?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+
+Cross-check [[sop-library/README|SOP Library]], [[sop-registry|SOP Registry]], [[agent-approval-rules|Agent Approval Rules]], and [[memory-and-decision-hygiene|Memory And Decision Hygiene]].
+
+
+This file defines what each agent does step by step.
 
 Use it with [[agent-roster|Agent Roster]], [[agent-schedules|Agent Schedules]], [[agent-output-contracts|Agent Output Contracts]], and [[agent-approval-rules|Agent Approval Rules]].
 
 ## Shared Workflow Skeleton
 
-Every scheduled agent should begin with this shared sequence:
+Every agent should begin with this shared sequence:
 
 1. Read the governing source records, relevant SOPs, and related decision records.
 2. Create or update the runtime status file in `source-of-truth/agent-status/`.
@@ -162,6 +177,16 @@ They should write explicit sections for:
 4. Draft clear signal summaries with confidence and recommended follow-up experiments or backlog changes.
 5. Route key patterns to Metrics and Today, and route high-value product implications to Top Backlog.
 6. Raise approval when the recommended response materially changes scope, timing, public messaging, or investment.
+
+## Linda
+
+1. Read [[agents/profiles/linda/README|Linda]], [[repo-health-audit|Repo Health Audit]], [[lookherefirst|Look Here First]], [[question|question.md]], the source-of-truth contract, decision index, SOP registry, active agent roster, and [[source-of-truth/memory/linda-repo-health|Linda Repo Health Memory]].
+2. Ignore generated artifacts, `.git/`, `.DS_Store`, archived `review later/`, and guidance scaffolding such as `Before You Edit This File` blocks when scoring core repo quality.
+3. Audit clarity first, then overlaps, sequencing, placement, utilization, and memory continuity.
+4. Compare the current score with the prior Linda score and identify the weakest area.
+5. Write the score, delta, must-look findings, one-day work, and challenge question to [[source-of-truth/memory/linda-repo-health|Linda Repo Health Memory]].
+6. Route must-look findings to Today, trust-blocking issues to Blocked Agents, and decision-bearing findings to Recent Decisions or Needs Approval.
+7. Stop if the requested fix would change accepted authority, source-of-truth contracts, file placement rules, or agent powers without approval.
 
 ## Source-of-Truth Steward
 

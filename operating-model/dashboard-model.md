@@ -6,6 +6,21 @@ aliases:
 
 # Dashboard Model
 
+## Before You Edit This File
+
+Frame of mind: This file defines the dashboard concept inside the operating model. Keep it about lifecycle visibility, decisions, blockers, approvals, and next actions.
+
+Ask yourself before changing it:
+- What should the dashboard make obvious without opening every file?
+  Prompt: Describe what the human should see or do from the dashboard in one practical sentence.
+- Which dashboard ideas come from lifecycle and decision gates?
+  Prompt: Describe what the human should see or do from the dashboard in one practical sentence.
+- What belongs in the detailed dashboard folder instead?
+  Prompt: Describe what the human should see or do from the dashboard in one practical sentence.
+
+Cross-check [[dashboard/README|Dashboard Specification]], [[lifecycle]], [[decision-gates|Decision Gates]], and [[agent-status-dashboard-contract|Agent Status Dashboard Contract]].
+
+
 This document defines how the initiative lifecycle should appear in a dashboard so humans and agents can see flow, blockers, approvals, and next actions without opening every ticket.
 
 For the decision-centered Step 6 dashboard specification, use [[dashboard/README|Dashboard Specification]] with this document.
@@ -227,8 +242,8 @@ This data contract should drive both dashboard rendering and automation.
 
 - [[operating-model/README|Operating Model Overview]]
 - [[dashboard/README|Dashboard Specification]]
-- [[dashboard/dashboard-tabs|Dashboard Tabs]]
-- [[dashboard/approval-queues|Approval Queues]]
+- [[dashboard/common-spec|Common Dashboard Spec]]
+- [[dashboard/common-spec|Common Dashboard Spec]]
 - [[operating-model/agent-status-schema/agent-status-dashboard-contract|Agent Status Dashboard Contract]]
 
 <!-- Reviewed and Approved on -->

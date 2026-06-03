@@ -6,9 +6,24 @@ aliases:
 
 # Agent Dashboard Routing
 
-This file defines where each scheduled agent writes dashboard output.
+## Before You Edit This File
 
-Use it with [[agent-output-contracts|Agent Output Contracts]], [[agent-workflows|Agent Workflows]], and [[dashboard/dashboard-tabs|Dashboard Tabs]].
+Frame of mind: This file defines where agent outputs appear. Routing should help a human decide, not flood the dashboard.
+
+Ask yourself before changing it:
+- Which dashboard tab or queue should receive this output?
+  Prompt: Describe what the human should see or do from the dashboard in one practical sentence.
+- Is the item a decision, blocker, metric, approval, cost issue, or status update?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- What source links must travel with the routed item?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+
+Cross-check [[dashboard/common-spec|Common Dashboard Spec]], [[dashboard/common-spec|Common Dashboard Spec]], and [[dashboard/common-spec|Common Dashboard Spec]].
+
+
+This file defines where each agent writes dashboard output.
+
+Use it with [[agent-output-contracts|Agent Output Contracts]], [[agent-workflows|Agent Workflows]], and [[dashboard/common-spec|Common Dashboard Spec]].
 
 ## Routing Table
 
@@ -23,6 +38,7 @@ Use it with [[agent-output-contracts|Agent Output Contracts]], [[agent-workflows
 | QA / Release Reviewer | Primary | Primary | Primary | No | No | No | No |
 | Security / Secrets Reviewer | Primary | Primary | Primary | No | Secondary when decisions are affected | No | No |
 | Customer Signal Reviewer | Primary | Secondary when signal response needs approval | No | Secondary | No | Primary | No |
+| Linda | Primary | Secondary when cleanup requires structural approval | Primary when ambiguity, overlap, or sequencing blocks trust | No | Secondary when findings imply a decision record | No | No |
 | Source-of-Truth Steward | Primary | Secondary when record repair needs approval | Primary | No | Secondary when decision hygiene is affected | No | No |
 | Decision Record Steward | Secondary | Primary when decision review is required | Secondary when conflicts block work | No | Primary | No | No |
 
@@ -41,17 +57,17 @@ Typical card types:
 
 ### Needs Approval
 
-Use Needs Approval when the scheduled agent reaches a decision the human must make before the dependent work can continue.
+Use Needs Approval when the agent reaches a decision the human must make before the dependent work can continue.
 
 Typical card types:
 
 - approval
 - revision request
-- scheduled approval follow-up
+- approval follow-up
 
 ### Blocked Agents
 
-Use Blocked Agents when the scheduled run identifies active work that cannot continue and names a concrete unblock action.
+Use Blocked Agents when the agent run identifies active work that cannot continue and names a concrete unblock action.
 
 Typical card types:
 
@@ -113,6 +129,6 @@ Typical card types:
 
 - [[agent-output-contracts|Agent Output Contracts]]
 - [[agent-approval-rules|Agent Approval Rules]]
-- [[dashboard/approval-queues|Approval Queues]]
+- [[dashboard/common-spec|Common Dashboard Spec]]
 
 <!-- Reviewed and Approved on -->

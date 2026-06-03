@@ -6,6 +6,21 @@ aliases:
 
 # SOP Usage Rules
 
+## Before You Edit This File
+
+Frame of mind: This file defines how SOPs are actually used. It should tell agents how to pick, run, stop, and report a procedure.
+
+Ask yourself before changing it:
+- When is an SOP required, optional, or prohibited?
+  Prompt: State whether this belongs in a reusable SOP, an agent workflow, or a one-time record.
+- What inputs and outputs must be linked before execution is valid?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- What stop conditions prevent unsafe or stale SOP use?
+  Prompt: State whether this belongs in a reusable SOP, an agent workflow, or a one-time record.
+
+Cross-check [[sop-registry|SOP Registry]], [[agent-workflows|Agent Workflows]], and [[source-of-truth/files-and-folders|Files And Folders]].
+
+
 This file defines how agents select, run, link, and report SOP execution.
 
 This note is written to stay Obsidian-friendly:

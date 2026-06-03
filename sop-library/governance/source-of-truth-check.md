@@ -5,6 +5,21 @@ aliases:
 
 # Source Of Truth Check
 
+## Before You Edit This File
+
+Frame of mind: This SOP protects the integrity of the repo. Think like a librarian: find broken links, missing records, stale state, and conflicting truth.
+
+Ask yourself before changing it:
+- What records must be read before declaring the source of truth healthy?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- What is safe to fix automatically versus approval-gated?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- How should conflicts be reported without resolving them by guesswork?
+  Prompt: Answer in plain English first, then decide which file or decision record should hold the final version.
+
+Cross-check [[source-of-truth/files-and-folders|Files And Folders]], [[decision-record-review|Decision Record Review]], and [[agent-approval-rules|Agent Approval Rules]].
+
+
 Version: `v1.0`
 
 ## Purpose

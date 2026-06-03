@@ -7,15 +7,31 @@ aliases:
 
 # Memory And Decision Hygiene
 
-This note consolidates how scheduled agents should manage durable memory and decisions.
+## Before You Edit This File
 
-Use it with [[scheduled-agents|Scheduled Agents]], [[agent-workflows|Agent Workflows]], [[agent-output-contracts|Agent Output Contracts]], [[daily-journal|Daily Journal]], [[operating-model/decision-record-system/README|Decision Record System]], and [[decision-record-rules|Decision Record Rules]].
+Frame of mind: This file teaches agents what to remember and where. It should prevent decisions, daily memory, runtime status, and artifacts from blurring together.
+
+Ask yourself before changing it:
+- Is this a status update, journal note, decision record, or artifact?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+- What minimum durable write is required?
+  Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
+- What must be linked instead of duplicated?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+
+Cross-check [[daily-journal|Daily Journal]], [[Decision Record System]], [[source-of-truth/files-and-folders|Files And Folders]], and [[agent-status-rules|Agent Status Rules]].
+
+
+This note consolidates how agents should manage durable memory and decisions.
+
+Use it with [[agents-overview|Agents Overview]], [[agent-workflows|Agent Workflows]], [[agent-output-contracts|Agent Output Contracts]], [[daily-journal|Daily Journal]], [[operating-model/decision-record-system/README|Decision Record System]], and [[decision-record-rules|Decision Record Rules]].
 
 ## Purpose
 
 The repo already distinguishes between:
 
 - runtime state in `source-of-truth/agent-status/`
+- durable recurring agent memory in `source-of-truth/memory/`
 - daily or operational memory in `source-of-truth/journals/`
 - load-bearing decisions in `source-of-truth/decisions/`
 
@@ -28,6 +44,7 @@ If a fact needs to be remembered after the current run, it must be written to an
 Use this split:
 
 - write runtime execution state to `source-of-truth/agent-status/`
+- write recurring agent memory, such as Linda's score history, to `source-of-truth/memory/`
 - write daily memory and operating context to `source-of-truth/journals/`
 - write load-bearing decisions to `source-of-truth/decisions/`
 
@@ -67,6 +84,17 @@ Write to daily memory when the information is:
 - a newly observed risk
 - a ticket created or closed
 - a launch observation, surprise, or lesson
+
+### Write To Recurring Agent Memory
+
+Write to recurring agent memory when the information is:
+
+- specific to one named agent's continuity across runs
+- a score history, prior finding, or carried-forward audit item
+- useful for comparing today's run with yesterday's run
+- not a load-bearing decision and not a full daily journal
+
+Linda's repo-health score history belongs in [[source-of-truth/memory/linda-repo-health|Linda Repo Health Memory]].
 
 ### Write To A Decision Record
 
@@ -219,7 +247,7 @@ Stop and escalate when:
 
 ## Related
 
-- [[scheduled-agents|Scheduled Agents]]
+- [[agents-overview|Agents Overview]]
 - [[agent-workflows|Agent Workflows]]
 - [[agent-output-contracts|Agent Output Contracts]]
 - [[daily-journal|Daily Journal]]

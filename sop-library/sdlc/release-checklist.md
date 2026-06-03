@@ -5,6 +5,21 @@ aliases:
 
 # Release Checklist
 
+## Before You Edit This File
+
+Frame of mind: This SOP defines release readiness. It should prevent shipping without owners, rollback, test evidence, and explicit approval where needed.
+
+Ask yourself before changing it:
+- What is shipping, who owns it, and what rollback exists?
+  Prompt: Name the accountable person or role; if unclear, write `Unassigned` rather than guessing.
+- Are tests, security, visual review, and known issues documented?
+  Prompt: Answer with the current fallback first: file-only, GitHub-linked, or GitHub-required.
+- Does deploy or public launch require approval?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+
+Cross-check [[feature-delivery|Feature Delivery]], [[testing|Testing]], [[security-review|Security Review]], and [[approval-boundaries|Approval Boundaries]].
+
+
 Version: `v1.0`
 
 ## Purpose

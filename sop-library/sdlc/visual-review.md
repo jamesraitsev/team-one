@@ -5,6 +5,21 @@ aliases:
 
 # Visual Review
 
+## Before You Edit This File
+
+Frame of mind: This SOP defines visual quality checks. Use it when humans need to trust layout, readability, screenshots, and UI behavior.
+
+Ask yourself before changing it:
+- What viewports, states, and interactions must be inspected?
+  Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
+- Does text fit and do controls remain usable?
+  Prompt: Answer in plain English first, then decide which file or decision record should hold the final version.
+- What visual defect blocks release versus needs a follow-up?
+  Prompt: Name the risk, severity, and the smallest safe next step.
+
+Cross-check [[testing|Testing]], [[release-checklist|Release Checklist]], and [[dashboard/common-spec|Common Dashboard Spec]] when reviewing dashboard UI.
+
+
 Version: `v1.0`
 
 ## Purpose

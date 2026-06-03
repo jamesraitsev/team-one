@@ -6,6 +6,21 @@ aliases:
 
 # Files And Folders
 
+## Before You Edit This File
+
+Frame of mind: This file defines where durable truth may live. Be strict: folder contracts prevent scattered notes, duplicate state, and confusing future automation.
+
+Ask yourself before changing it:
+- Which folders are active today, and which are only approved future capacity?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- Where may agents write without asking for a new structural decision?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+- Does every durable output have a required backlink path?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+
+Cross-check [[source-of-truth/decisions/index|Decision Index]], [[github|GitHub]], [[memory-and-decision-hygiene|Memory And Decision Hygiene]], and [[dr-0001-sop-library-location-and-governance|DR-0001]].
+
+
 This file defines the durable knowledge source of truth for files and folders.
 
 The canonical root is `source-of-truth/` at the repo root.
@@ -26,6 +41,7 @@ Create durable files only inside these folders under `source-of-truth/`.
 | Folder | Purpose | Required rule |
 | --- | --- | --- |
 | `agent-status/` | Active runtime agent status records | One active status file per active agent execution context, plus `index.md` for the active summary. |
+| `memory/` | Durable agent memory that persists across recurring runs | One file per durable agent memory stream; memory must not replace decision records, journals, projects, or artifacts. |
 | `ideas/` | Individual idea records | One markdown file per idea. |
 | `decisions/` | Durable decision records | Each decision links back to one or more ideas. |
 | `journals/` | Daily journals | Each journal links to related ideas, decisions, projects, and issues where possible. |
@@ -63,6 +79,7 @@ The following top-level folder is also approved because it is a reusable operati
 | Action | Required behavior |
 | --- | --- |
 | New agent status | Create or update files in `source-of-truth/agent-status/` only, following the runtime status contract. |
+| New agent memory | Create or update files in `source-of-truth/memory/` only when a recurring agent needs durable carry-forward context that is not a decision record. |
 | Read before write | Read the linked idea, decision, project, journal, and artifact records before updating related context. |
 | New idea | Create one markdown file in `source-of-truth/ideas/`. |
 | New decision | Create or update a file in `source-of-truth/decisions/` and link back to the related idea. |
@@ -92,6 +109,7 @@ The dashboard should show:
 | --- | --- |
 | Active source of truth | `source-of-truth/` |
 | Agent status location | `source-of-truth/agent-status/` |
+| Agent memory location | `source-of-truth/memory/` |
 | Idea backlog location | `source-of-truth/ideas/` |
 | Decision record location | `source-of-truth/decisions/` |
 | Journal location | `source-of-truth/journals/` |
@@ -107,5 +125,6 @@ The dashboard should show:
 - [[operating-model/decision-record-system/README|Decision Record System]]
 - [[dr-0001-sop-library-location-and-governance|Decision 001 - SOP Library Location And Governance]]
 - [[dr-0002-agent-status-runtime-location-and-contract|Decision 002 - Agent Status Runtime Location And Contract]]
+- [[dr-0003-linda-repo-health-auditor-and-memory|Decision 003 - Linda Repo Health Auditor And Memory]]
 
 <!-- Reviewed and Approved on -->

@@ -6,6 +6,21 @@ aliases:
 
 # Safe Actions
 
+## Before You Edit This File
+
+Frame of mind: This file defines the small things agents can safely do. Keep the list narrow enough that autonomy stays boring and auditable.
+
+Ask yourself before changing it:
+- Is the action low-cost to reverse and fully visible in records?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- Could it accidentally change customer-facing, financial, security, or architectural state?
+  Prompt: Name the exposure, who can approve the risk, and what evidence proves it is controlled.
+- What record should prove the action happened?
+  Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
+
+Cross-check [[approval-boundaries|Approval Boundaries]], [[autonomy-ramp|Autonomy Ramp]], and [[agent-status-rules|Agent Status Rules]].
+
+
 This note defines which actions count as safe autonomous actions once the observability baseline exists.
 
 Use it with [[guardrails|Guardrails]], [[autonomy-ramp|Autonomy Ramp]], [[approval-boundaries|Approval Boundaries]], and [[agent-approval-rules|Agent Approval Rules]].

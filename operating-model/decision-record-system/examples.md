@@ -6,6 +6,21 @@ aliases:
 
 # Examples
 
+## Before You Edit This File
+
+Frame of mind: Examples should teach the pattern without becoming new policy. Keep them realistic and clearly subordinate to the rules.
+
+Ask yourself before changing it:
+- Does the example use the current naming and template rules?
+  Prompt: Keep examples clearly fake and templates easy to copy without inventing live facts.
+- Does it show when a decision is load-bearing?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+- Could someone mistake this example for an accepted repo decision?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+
+Cross-check [[decision-record-template|Decision Record Template]], [[decision-record-rules|Decision Record Rules]], and [[source-of-truth/decisions/index|Decision Index]].
+
+
 These are format examples only. They are not live decisions.
 
 ## Example 1: GitHub Issues As The Executable Backlog

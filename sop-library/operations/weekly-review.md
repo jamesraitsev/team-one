@@ -5,6 +5,21 @@ aliases:
 
 # Weekly Review
 
+## Before You Edit This File
+
+Frame of mind: This SOP defines the weekly operating rhythm. Keep it focused on commitments, progress, cost, risk, and decisions that change direction.
+
+Ask yourself before changing it:
+- What advanced, stalled, or changed this week?
+  Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
+- Which decisions or assumptions need review before next week?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+- What should continue, pause, narrow, scale, or stop?
+  Prompt: Name the risk, severity, and the smallest safe next step.
+
+Cross-check [[daily-journal|Daily Journal]], [[dashboard-review|Dashboard Review]], and [[source-of-truth/decisions/index|Decision Index]].
+
+
 Version: `v1.0`
 
 ## Purpose

@@ -8,6 +8,21 @@ aliases:
 
 # DR-0002: Agent Status Runtime Location And Contract
 
+## Before You Edit This File
+
+Frame of mind: This decision explains where live agent runtime status belongs. Edit it only if status storage, dashboard reading, or runtime authority changes.
+
+Ask yourself before changing it:
+- Is `source-of-truth/agent-status/` still the one live status location?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- Does status describe current execution without replacing decisions, journals, or project records?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- Would dashboard behavior break if this contract changed?
+  Prompt: Describe what the human should see or do from the dashboard in one practical sentence.
+
+Cross-check [[operating-model/agent-status-schema/README|Agent Status Schema]], [[source-of-truth/agent-status/index|Agent Status Index]], and [[dashboard/common-spec|Common Dashboard Spec]].
+
+
 ## Metadata
 
 | Field | Value |

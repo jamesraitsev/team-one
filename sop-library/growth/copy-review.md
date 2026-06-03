@@ -5,6 +5,21 @@ aliases:
 
 # Copy Review
 
+## Before You Edit This File
+
+Frame of mind: This SOP reviews messaging before it becomes public. Be direct about claims, audience fit, clarity, and risk.
+
+Ask yourself before changing it:
+- Is the copy true, specific, and aligned with the target user?
+  Prompt: Answer in plain English first, then decide which file or decision record should hold the final version.
+- Does it make unsupported claims or imply capabilities that are not live?
+  Prompt: Mark the item as live now, planned later, or out of scope; do not leave it implied.
+- Does public use require approval?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+
+Cross-check [[content-approval|Content Approval]], [[launch-planning|Launch Planning]], and [[approval-boundaries|Approval Boundaries]].
+
+
 Version: `v1.0`
 
 ## Purpose

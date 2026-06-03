@@ -6,6 +6,21 @@ aliases:
 
 # Decision Record Rules
 
+## Before You Edit This File
+
+Frame of mind: This file is the rulebook for decision creation and maintenance. It should prevent silent overrides and stale assumptions.
+
+Ask yourself before changing it:
+- When must a new record be created instead of a journal note?
+  Prompt: Write what tomorrow needs to know, not a transcript of everything that happened.
+- When should an existing decision be updated, superseded, or reviewed?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+- What happens when two accepted decisions conflict?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+
+Cross-check [[Decision Record System]], [[decision-record-template|Decision Record Template]], and [[source-of-truth/decisions/index|Decision Index]].
+
+
 These rules define when decision records are required and how they are maintained.
 
 Use them with:

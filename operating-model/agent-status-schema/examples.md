@@ -5,6 +5,21 @@ aliases:
 
 # Agent Status Examples
 
+## Before You Edit This File
+
+Frame of mind: Examples should make status files feel usable. They should not define new required fields or new status vocabulary.
+
+Ask yourself before changing it:
+- Does each example follow the current template?
+  Prompt: Keep examples clearly fake and templates easy to copy without inventing live facts.
+- Does it show links to governing records?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- Does it clearly separate status from decisions and journals?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+
+Cross-check [[agent-status-template|Agent Status Template]], [[agent-status-rules|Agent Status Rules]], and [[memory-and-decision-hygiene|Memory And Decision Hygiene]].
+
+
 ## Healthy Active Agent
 
 ```md

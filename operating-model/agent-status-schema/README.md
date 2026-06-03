@@ -6,6 +6,21 @@ aliases:
 
 # Agent Status Schema
 
+## Before You Edit This File
+
+Frame of mind: This is the front door for runtime status. It should explain status as live execution state, not decisions, journals, or project truth.
+
+Ask yourself before changing it:
+- What is an agent status file for?
+  Prompt: Keep this to current state: what is happening, what is blocked, and the next action.
+- How does status connect to dashboard cards and approval queues?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- Where does status stop and durable decision or journal writing begin?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+
+Cross-check [[agent-status-file-contract|Agent Status File Contract]], [[source-of-truth/agent-status/index|Agent Status Index]], and [[memory-and-decision-hygiene|Memory And Decision Hygiene]].
+
+
 This folder defines the standard runtime status model for agents working inside this operating system.
 
 Use it with:

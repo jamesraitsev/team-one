@@ -5,6 +5,21 @@ aliases:
 
 # Feature Delivery
 
+## Before You Edit This File
+
+Frame of mind: This SOP turns approved plans into shipped work. Keep it tied to scope, evidence, tests, and release readiness.
+
+Ask yourself before changing it:
+- What approved plan or decision authorizes the feature?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- What is in scope, out of scope, and risky?
+  Prompt: Draw the boundary in one sentence: included, excluded, and what needs approval to change.
+- What evidence proves the feature is ready for review?
+  Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
+
+Cross-check [[testing|Testing]], [[release-checklist|Release Checklist]], [[security-review|Security Review]], and [[tech/README|Tech]].
+
+
 Version: `v1.0`
 
 ## Purpose

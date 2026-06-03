@@ -5,6 +5,21 @@ aliases:
 
 # SOP Template
 
+## Before You Edit This File
+
+Frame of mind: This is the pattern for new procedures. Keep it clear for non-technical editors and strict enough for agents to execute.
+
+Ask yourself before changing it:
+- Does the template state purpose, inputs, steps, outputs, stop conditions, and approval needs?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- Does it require backlinks to durable records?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- Can the result be routed to dashboard or agent outputs?
+  Prompt: Describe what the human should see or do from the dashboard in one practical sentence.
+
+Cross-check [[sop-usage-rules|SOP Usage Rules]], [[sop-registry|SOP Registry]], and [[agent-output-contracts|Agent Output Contracts]].
+
+
 Use this template for every new SOP.
 
 ```md

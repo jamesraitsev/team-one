@@ -5,6 +5,21 @@ aliases:
 
 # Backlog Grooming
 
+## Before You Edit This File
+
+Frame of mind: This SOP keeps the backlog usable. It should remove ambiguity before debating priority.
+
+Ask yourself before changing it:
+- Are items duplicated, stale, ownerless, or missing links?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- What ranking recommendation is evidence-based versus opinion-only?
+  Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
+- Does reprioritization require human approval?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+
+Cross-check [[source-of-truth/github|GitHub]], [[agent-approval-rules|Agent Approval Rules]], and [[agents/agent-roster|Agent Roster]].
+
+
 Version: `v1.0`
 
 ## Purpose

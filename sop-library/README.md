@@ -6,6 +6,21 @@ aliases:
 
 # SOP Library
 
+## Before You Edit This File
+
+Frame of mind: This is the SOP library's front door. It should make clear that SOPs are reusable procedures, not project notes or live records.
+
+Ask yourself before changing it:
+- What belongs in an SOP versus an agent workflow or source-of-truth record?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- How are SOPs versioned, registered, and linked?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- What happens when an SOP conflicts with an accepted decision?
+  Prompt: State whether this belongs in a reusable SOP, an agent workflow, or a one-time record.
+
+Cross-check [[sop-registry|SOP Registry]], [[sop-usage-rules|SOP Usage Rules]], and [[dr-0001-sop-library-location-and-governance|DR-0001]].
+
+
 This folder is the reusable SOP library for the repo's agent operating model.
 
 It turns repeated workflows into explicit, executable procedures that agents can follow across repos, projects, and initiatives without recreating process from scratch.

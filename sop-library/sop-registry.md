@@ -5,6 +5,21 @@ aliases:
 
 # SOP Registry
 
+## Before You Edit This File
+
+Frame of mind: This is the inventory of active SOPs. It should be accurate enough that agents can choose procedures without guessing.
+
+Ask yourself before changing it:
+- Is every active SOP listed with version, owner, inputs, outputs, and approval boundaries?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- Do categories match [[categories|SOP Categories]]?
+  Prompt: State whether this belongs in a reusable SOP, an agent workflow, or a one-time record.
+- Did any SOP file change without this registry changing too?
+  Prompt: State whether this belongs in a reusable SOP, an agent workflow, or a one-time record.
+
+Cross-check [[sop-library/README|SOP Library]], [[sop-usage-rules|SOP Usage Rules]], and every SOP file.
+
+
 This registry is the canonical index of active SOPs in this repo.
 
 | SOP name | Category | File path | Lifecycle stage | Used by agents | Required inputs | Output artifacts | Human approval required | Related decision records |
@@ -26,6 +41,7 @@ This registry is the canonical index of active SOPs in this repo.
 | Decision Record Review | Governance | `sop-library/governance/decision-record-review.md` | Cross-stage | governance, architecture, review agents | candidate decision, linked idea or project, affected issues | updated decision record, issue update, action note | yes to accept or supersede a decision | [[dr-0001-sop-library-location-and-governance|Decision 001 - SOP Library Location And Governance]] |
 | Source Of Truth Check | Governance | `sop-library/governance/source-of-truth-check.md` | Cross-stage | governance, review, coordination agents | linked records, issue state, artifact paths | discrepancy report, fixed links, issue update | yes when resolving a conflict requires changing approved records | [[dr-0001-sop-library-location-and-governance|Decision 001 - SOP Library Location And Governance]] |
 | Agent Permission Review | Governance | `sop-library/governance/agent-permission-review.md` | Cross-stage | governance, security, delivery agents | planned action, active stage, risk context | permission review note, escalation request if needed | yes when the action crosses approval boundaries | [[dr-0001-sop-library-location-and-governance|Decision 001 - SOP Library Location And Governance]] |
+| Repo Health Audit | Governance | `sop-library/governance/repo-health-audit.md` | Cross-stage | Linda, governance, source-of-truth agents | active repo docs, decision index, file contract, SOP registry, Linda memory | repo-health score, must-look findings, one-day work, challenge question, Linda memory update | yes when fixing findings would change accepted authority, file placement, or source-of-truth contracts | [[dr-0003-linda-repo-health-auditor-and-memory|Decision 003 - Linda Repo Health Auditor And Memory]] |
 
 ## Related
 

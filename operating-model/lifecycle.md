@@ -6,6 +6,21 @@ aliases:
 
 # Lifecycle Definition
 
+## Before You Edit This File
+
+Frame of mind: This file defines the initiative journey. Keep it simple enough that every agent, SOP, dashboard card, and issue label can reuse the same stages.
+
+Ask yourself before changing it:
+- What stages exist, and what does each stage mean in plain language?
+  Prompt: State the current stage, the next stage, and the evidence needed before movement.
+- What statuses are allowed inside a stage?
+  Prompt: Keep this to current state: what is happening, what is blocked, and the next action.
+- Does this change require updates to decision gates, dashboard columns, or GitHub labels?
+  Prompt: Answer with the current fallback first: file-only, GitHub-linked, or GitHub-required.
+
+Cross-check [[decision-gates|Decision Gates]], [[dashboard-model|Dashboard Model]], and [[agent-responsibilities|Agent Responsibilities]].
+
+
 This document defines the required behavior for each stage in the initiative lifecycle.
 
 See also: [[decision-gates]], [[dashboard-model]], [[agent-responsibilities]], [[operating-model/README|Operating Model Overview]]

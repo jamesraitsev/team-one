@@ -6,13 +6,28 @@ aliases:
 
 # Agent Output Contracts
 
-This file defines the required output format for scheduled agents.
+## Before You Edit This File
 
-Use it with [[agent-workflows|Agent Workflows]], [[agent-dashboard-routing|Agent Dashboard Routing]], and [[dashboard/dashboard-card-contract|Dashboard Card Contract]].
+Frame of mind: This file defines what agents produce. Outputs should be structured enough for dashboards and humans, without hiding uncertainty.
+
+Ask yourself before changing it:
+- What fields must every agent output include?
+  Prompt: Name the deliverable, its owner, and the source record it must link back to.
+- How should confidence, evidence, blockers, risks, approvals, and next action be stated?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- Where does the output get written or routed?
+  Prompt: Name the deliverable, its owner, and the source record it must link back to.
+
+Cross-check [[agent-dashboard-routing|Agent Dashboard Routing]], [[dashboard/common-spec|Common Dashboard Spec]], and [[agent-status-file-contract|Agent Status File Contract]].
+
+
+This file defines the required output format for agents.
+
+Use it with [[agent-workflows|Agent Workflows]], [[agent-dashboard-routing|Agent Dashboard Routing]], and [[dashboard/common-spec|Common Dashboard Spec]].
 
 ## Purpose
 
-Every scheduled agent must produce output that is:
+Every agent must produce output that is:
 
 - durable
 - linkable
@@ -22,7 +37,7 @@ Every scheduled agent must produce output that is:
 
 ## Required Output Fields
 
-Every scheduled-agent output packet must include these sections in this order:
+Every agent output packet must include these sections in this order:
 
 1. `Brief summary`
 2. `Findings`
@@ -52,6 +67,17 @@ For daily runs, every output packet must also include a `Memory and decision hyg
 4. `New risks`
 5. `Tickets created`
 6. `Tickets closed`
+
+For Linda runs, the output packet must also include a `Repo health audit` section with these subsections:
+
+1. `Current score`
+2. `Previous score`
+3. `Delta`
+4. `Weakest area`
+5. `Must-look findings`
+6. `One-day work`
+7. `Challenge for James`
+8. `Memory update`
 
 ## Field Contract
 
@@ -161,7 +187,7 @@ An approval request is valid only when it includes:
 
 ## Failure Rules
 
-If a scheduled agent cannot produce a compliant output packet:
+If an agent cannot produce a compliant output packet:
 
 1. mark the runtime status `Blocked` or `Needs Approval`, whichever is accurate
 2. explain the exact missing input, decision, or permission
@@ -177,7 +203,7 @@ If a daily run cannot produce the memory-hygiene block:
 
 - [[agent-dashboard-routing|Agent Dashboard Routing]]
 - [[agent-approval-rules|Agent Approval Rules]]
-- [[dashboard/approval-queues|Approval Queues]]
+- [[dashboard/common-spec|Common Dashboard Spec]]
 - [[memory-and-decision-hygiene|Memory And Decision Hygiene]]
 
 <!-- Reviewed and Approved on -->

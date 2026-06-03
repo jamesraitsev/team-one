@@ -5,6 +5,21 @@ aliases:
 
 # Agent Status File Contract
 
+## Before You Edit This File
+
+Frame of mind: This is the field contract for active status files. Every dashboard and agent should be able to trust these fields.
+
+Ask yourself before changing it:
+- Which fields are required for every active run?
+  Prompt: Answer in plain English first, then decide which file or decision record should hold the final version.
+- Which links prove the status is grounded in real records?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- What fields must not contain decisions that belong elsewhere?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+
+Cross-check [[agent-status-rules|Agent Status Rules]], [[agent-status-template|Agent Status Template]], and [[dashboard/common-spec|Common Dashboard Spec]].
+
+
 This file defines the runtime file model for agent status records.
 
 ## One Status File Per Active Agent

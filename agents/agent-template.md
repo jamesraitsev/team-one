@@ -6,7 +6,28 @@ aliases:
 
 # Agent Template
 
-Use this template when defining a new scheduled agent or revising an existing one.
+## Before You Edit This File
+
+Frame of mind: This template is for adding future agents. It should force clear ownership, boundaries, interactions, outputs, and approval limits before the agent exists.
+
+Ask yourself before changing it:
+- What is the agent responsible for and explicitly not responsible for?
+  Prompt: Write the role in one sentence, then name one thing it must not own.
+- Who or what does it interact with: SOPs, dashboard tabs, source records, other agents, humans?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- What are its recommendation rights, approval limits, and stop conditions?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+
+Cross-check [[agent-roster|Agent Roster]], [[agent-output-contracts|Agent Output Contracts]], [[agent-approval-rules|Agent Approval Rules]], and [[sop-registry|SOP Registry]].
+
+
+Use this template when defining a new project-curator agent or revising an existing one.
+
+Individual agents should live in this folder pattern:
+
+`agents/profiles/<agent-slug>/README.md`
+
+Schedules are cadence rules only. They do not make an agent a different type of agent.
 
 ## Template
 
@@ -74,7 +95,7 @@ State the agent's recurring operating responsibility in one short paragraph.
 - Create or update an approval item when:
   - the agent needs a human decision to continue
   - the action changes spend, deploy state, permissions, public messaging, deletion, or architecture
-- Use only statuses from [[dashboard/approval-queues|Approval Queues]]
+- Use only statuses from [[dashboard/common-spec|Common Dashboard Spec]]
 - Never resolve the approval without a human action
 
 ## Agent Status Update Rules
@@ -115,7 +136,7 @@ State the agent's recurring operating responsibility in one short paragraph.
 
 ## Related
 
-- [[scheduled-agents|Scheduled Agents]]
+- [[agents-overview|Agents Overview]]
 - [[agent-roster|Agent Roster]]
 - [[agent-output-contracts|Agent Output Contracts]]
 - [[agent-approval-rules|Agent Approval Rules]]

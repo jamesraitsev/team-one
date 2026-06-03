@@ -5,6 +5,21 @@ aliases:
 
 # Decision Record Review
 
+## Before You Edit This File
+
+Frame of mind: This SOP reviews decision health. It should help find missing, stale, conflicting, or superseded decisions without making the decision itself.
+
+Ask yourself before changing it:
+- Which accepted decisions govern the current work?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+- Are any decisions stale, contradictory, or missing review triggers?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+- Does a human need to accept, reject, or supersede anything?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+
+Cross-check [[operating-model/decision-record-system/README|Decision Record System]], [[source-of-truth/decisions/index|Decision Index]], and [[decision-record-rules|Decision Record Rules]].
+
+
 Version: `v1.0`
 
 ## Purpose

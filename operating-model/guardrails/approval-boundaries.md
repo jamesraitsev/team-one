@@ -6,9 +6,24 @@ aliases:
 
 # Approval Boundaries
 
+## Before You Edit This File
+
+Frame of mind: This file turns safety into approval classes. Keep it practical: a user should know whether an agent can act or must ask.
+
+Ask yourself before changing it:
+- Is the action reversible, internal, and low-risk?
+  Prompt: Name the risk, severity, and the smallest safe next step.
+- Does it change spend, deploy, permissions, secrets, public content, data, or architecture?
+  Prompt: Define the source, calculation, freshness, and what threshold changes the decision.
+- What minimum approval packet should be created when the answer is unclear?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+
+Cross-check [[guardrails|Guardrails]], [[agent-responsibilities|Agent Responsibilities]], [[dashboard/common-spec|Common Dashboard Spec]], and [[agent-approval-rules|Agent Approval Rules]].
+
+
 This note defines what agents may do without approval and what always requires approval.
 
-Use it with [[guardrails|Guardrails]], [[autonomy-ramp|Autonomy Ramp]], [[agent-approval-rules|Agent Approval Rules]], and [[approval-queues|Approval Queues]].
+Use it with [[guardrails|Guardrails]], [[autonomy-ramp|Autonomy Ramp]], [[agent-approval-rules|Agent Approval Rules]], and [[dashboard/common-spec|Common Dashboard Spec]].
 
 ## Safe To Do Without Approval
 

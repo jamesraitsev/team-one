@@ -5,6 +5,21 @@ aliases:
 
 # Dashboard Review
 
+## Before You Edit This File
+
+Frame of mind: This SOP defines how to review dashboard state. It should focus attention on decisions, blockers, approvals, stale data, and next actions.
+
+Ask yourself before changing it:
+- What needs a human decision today?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- Which cards are blocked, stale, or missing source links?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- Does any dashboard action need approval before it writes anything?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+
+Cross-check [[dashboard/README|Dashboard Specification]], [[dashboard/common-spec|Common Dashboard Spec]], and [[dashboard/common-spec|Common Dashboard Spec]].
+
+
 Version: `v1.0`
 
 ## Purpose

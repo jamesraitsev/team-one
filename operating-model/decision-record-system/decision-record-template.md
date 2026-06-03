@@ -6,6 +6,21 @@ aliases:
 
 # Decision Record Template
 
+## Before You Edit This File
+
+Frame of mind: This is the copyable decision shape. Keep it complete but not intimidating; it should help a person make a clear record quickly.
+
+Ask yourself before changing it:
+- Does the template capture context, decision, rationale, dependencies, consequences, and review trigger?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+- Can a future agent tell whether the decision is accepted, superseded, or still proposed?
+  Prompt: Mark the item as live now, planned later, or out of scope; do not leave it implied.
+- Are required links obvious?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+
+Cross-check [[decision-record-rules|Decision Record Rules]], [[decision-record-naming|Decision Record Naming]], and [[source-of-truth/files-and-folders|Files And Folders]].
+
+
 Use this template for durable records in `source-of-truth/decisions/`.
 
 Recommended filename pattern:

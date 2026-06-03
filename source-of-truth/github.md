@@ -6,6 +6,21 @@ aliases:
 
 # GitHub
 
+## Before You Edit This File
+
+Frame of mind: This file defines GitHub as an execution surface only when real configuration exists. Until then, treat GitHub as intended infrastructure, not live operational truth.
+
+Ask yourself before changing it:
+- Is GitHub required now, optional now, or future-only?
+  Prompt: Mark the item as live now, planned later, or out of scope; do not leave it implied.
+- Are repo, auth, issue labels, and sync behavior filled with real values rather than placeholders?
+  Prompt: Answer with the current fallback first: file-only, GitHub-linked, or GitHub-required.
+- What should agents do when an issue reference is missing?
+  Prompt: Answer with the current fallback first: file-only, GitHub-linked, or GitHub-required.
+
+Cross-check [[source-of-truth/files-and-folders|Files And Folders]], [[dashboard/README|Dashboard]], and [[agent-approval-rules|Agent Approval Rules]].
+
+
 This file defines the GitHub backlog and local secret configuration for the source-of-truth system.
 
 GitHub Issues are the executable backlog unless you explicitly change that rule later.

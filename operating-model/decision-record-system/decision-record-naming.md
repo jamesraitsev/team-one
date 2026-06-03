@@ -6,6 +6,21 @@ aliases:
 
 # Decision Record Naming
 
+## Before You Edit This File
+
+Frame of mind: This file makes decisions findable. Naming should be stable, readable, and boring enough that links survive over time.
+
+Ask yourself before changing it:
+- What ID format should every decision use?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+- How should titles, aliases, and filenames work in Obsidian?
+  Prompt: Answer in plain English first, then decide which file or decision record should hold the final version.
+- What rename behavior is unsafe because it breaks references?
+  Prompt: Name the risk, severity, and the smallest safe next step.
+
+Cross-check [[decision-record-template|Decision Record Template]], [[decision-record-index-template|Decision Record Index Template]], and [[source-of-truth/decisions/index|Decision Index]].
+
+
 This file defines stable naming rules for decision records.
 
 ## Naming Rules

@@ -7,6 +7,21 @@ aliases:
 
 # Tech
 
+## Before You Edit This File
+
+Frame of mind: This file is deferred until a real build decision exists. Do not fill stack details as guesses; fill them only when they become implementation commitments.
+
+Ask yourself before changing it:
+- What software artifact is being built: dashboard only, broader operating system, or something else?
+  Prompt: Describe what the human should see or do from the dashboard in one practical sentence.
+- What data sources, auth, deployment, and security choices are actually decided?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- Which decisions need to be recorded before engineering starts?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+
+Cross-check [[dashboard/README|Dashboard Specification]], [[dashboard/common-spec|Common Dashboard Spec]], [[security-review|Security Review]], [[testing|Testing]], and [[source-of-truth/github|GitHub]].
+
+
 Use this file to define the technology choices for the app before build work starts.
 
 Fill in the sections below as decisions are made.

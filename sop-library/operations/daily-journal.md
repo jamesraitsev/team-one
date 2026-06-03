@@ -5,6 +5,21 @@ aliases:
 
 # Daily Journal
 
+## Before You Edit This File
+
+Frame of mind: This SOP defines daily memory. Keep it useful for tomorrow's operator, not a transcript of everything that happened.
+
+Ask yourself before changing it:
+- What changed today that must survive chat history?
+  Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
+- Were decisions made, assumptions changed, risks found, or tickets created/closed?
+  Prompt: Answer with the current fallback first: file-only, GitHub-linked, or GitHub-required.
+- Does any item need a decision record instead of only a journal entry?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+
+Cross-check [[memory-and-decision-hygiene|Memory And Decision Hygiene]], [[source-of-truth/files-and-folders|Files And Folders]], and [[decision-record-rules|Decision Record Rules]].
+
+
 Version: `v1.0`
 
 ## Purpose

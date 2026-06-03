@@ -5,6 +5,21 @@ aliases:
 
 # Testing
 
+## Before You Edit This File
+
+Frame of mind: This SOP defines proof that work behaves as expected. Testing should be concrete enough that quality is not a vibe.
+
+Ask yourself before changing it:
+- What behavior, risk, or regression must be tested?
+  Prompt: Name the risk, severity, and the smallest safe next step.
+- What test evidence is enough for the stage?
+  Prompt: State the current stage, the next stage, and the evidence needed before movement.
+- What failure blocks release or needs human risk acceptance?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+
+Cross-check [[feature-delivery|Feature Delivery]], [[release-checklist|Release Checklist]], and [[agents/agent-roster|Agent Roster]].
+
+
 Version: `v1.0`
 
 ## Purpose

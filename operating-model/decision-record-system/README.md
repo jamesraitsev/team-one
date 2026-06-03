@@ -7,6 +7,21 @@ aliases:
 
 # Decision Record System
 
+## Before You Edit This File
+
+Frame of mind: This is the front door for durable decisions. Keep it clear enough that a non-technical owner knows when a decision record is required.
+
+Ask yourself before changing it:
+- What makes a decision load-bearing?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+- Where are actual decision records stored?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- How should decisions connect to ideas, projects, journals, issues, and dashboard state?
+  Prompt: Answer with the current fallback first: file-only, GitHub-linked, or GitHub-required.
+
+Cross-check [[source-of-truth/decisions/index|Decision Index]], [[decision-record-rules|Decision Record Rules]], and [[source-of-truth/files-and-folders|Files And Folders]].
+
+
 This folder defines the rules, templates, and workflow for durable decision records.
 
 Use it with:

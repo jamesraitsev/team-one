@@ -5,6 +5,21 @@ aliases:
 
 # Content Approval
 
+## Before You Edit This File
+
+Frame of mind: This SOP governs publication. Treat public posting as approval-gated because it changes reputation, commitments, and sometimes legal risk.
+
+Ask yourself before changing it:
+- What exactly will be published, where, and by whom?
+  Prompt: Name the accountable person or role; if unclear, write `Unassigned` rather than guessing.
+- What claims, screenshots, pricing, or promises need review?
+  Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
+- What record proves approval happened?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+
+Cross-check [[copy-review|Copy Review]], [[launch-planning|Launch Planning]], and [[dashboard/common-spec|Common Dashboard Spec]].
+
+
 Version: `v1.0`
 
 ## Purpose

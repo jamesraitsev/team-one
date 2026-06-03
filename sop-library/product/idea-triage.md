@@ -5,6 +5,21 @@ aliases:
 
 # Idea Triage
 
+## Before You Edit This File
+
+Frame of mind: This SOP turns raw ideas into clean next steps. The goal is not to approve everything; it is to decide what deserves validation.
+
+Ask yourself before changing it:
+- What problem, owner, user, and expected outcome are clear?
+  Prompt: Name the accountable person or role; if unclear, write `Unassigned` rather than guessing.
+- Is this duplicate, out of scope, too vague, or ready for validation?
+  Prompt: Draw the boundary in one sentence: included, excluded, and what needs approval to change.
+- What record or issue should be created or linked?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+
+Cross-check [[lifecycle]], [[decision-gates|Decision Gates]], and [[validation-planning|Validation Planning]].
+
+
 Version: `v1.0`
 
 ## Purpose

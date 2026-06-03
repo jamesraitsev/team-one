@@ -6,6 +6,21 @@ aliases:
 
 # Decision Gates
 
+## Before You Edit This File
+
+Frame of mind: Decision gates are where work earns permission to move. Think like a reviewer: evidence first, approval second, movement last.
+
+Ask yourself before changing it:
+- What evidence is required before the next stage?
+  Prompt: State the current stage, the next stage, and the evidence needed before movement.
+- Who may approve, and what must block the move?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- When does the gate outcome need a durable decision record instead of a light note?
+  Prompt: If future work depends on the answer, write it as a decision record, not just a note.
+
+Cross-check [[lifecycle]], [[agent-responsibilities|Agent Responsibilities]], [[approval-boundaries|Approval Boundaries]], and [[source-of-truth/decisions/index|Decision Index]].
+
+
 Decision gates control movement between lifecycle stages. A gate should be treated as a checkpoint with evidence, an approver, and a recorded outcome.
 
 See also: [[lifecycle]], [[agent-responsibilities]], [[dashboard-model]], [[operating-model/README|Operating Model Overview]]
@@ -119,6 +134,6 @@ For where these records surface operationally, see [[dashboard-model#Dashboard D
 - [[lifecycle]]
 - [[agent-responsibilities]]
 - [[dashboard-model]]
-- [[dashboard/approval-queues|Approval Queues]]
+- [[dashboard/common-spec|Common Dashboard Spec]]
 
 <!-- Reviewed and Approved on -->

@@ -5,6 +5,21 @@ aliases:
 
 # Security Review
 
+## Before You Edit This File
+
+Frame of mind: This SOP reviews security before risk becomes accepted by accident. Keep it practical: secrets, auth, permissions, dependencies, data, and deploy posture.
+
+Ask yourself before changing it:
+- Could this expose secrets, private data, credentials, or unsafe permissions?
+  Prompt: Define the source, calculation, freshness, and what threshold changes the decision.
+- Does remediation require approval or architecture change?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- What severity and unblock action should be recorded?
+  Prompt: Name the risk, severity, and the smallest safe next step.
+
+Cross-check [[agent-permission-review|Agent Permission Review]], [[approval-boundaries|Approval Boundaries]], and [[tech/README|Tech]].
+
+
 Version: `v1.0`
 
 ## Purpose

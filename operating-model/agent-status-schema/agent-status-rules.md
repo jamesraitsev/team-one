@@ -5,6 +5,21 @@ aliases:
 
 # Agent Status Rules
 
+## Before You Edit This File
+
+Frame of mind: This file defines how active status changes over time. Keep it operational: create, update, block, request approval, close.
+
+Ask yourself before changing it:
+- When must an agent status file be created or updated?
+  Prompt: Keep this to current state: what is happening, what is blocked, and the next action.
+- What exact fields change when work is blocked or needs approval?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- When is a status archived instead of left active?
+  Prompt: Keep this to current state: what is happening, what is blocked, and the next action.
+
+Cross-check [[agent-status-file-contract|Agent Status File Contract]], [[agent-approval-rules|Agent Approval Rules]], and [[dashboard/common-spec|Common Dashboard Spec]].
+
+
 This file defines when agent status must be created, updated, linked, and closed.
 
 Use it with:

@@ -6,6 +6,21 @@ aliases:
 
 # Agent Operating Model
 
+## Before You Edit This File
+
+Frame of mind: This is the operating model's front door. A new person should understand the whole system's purpose, live-vs-spec posture, and authority order from this file.
+
+Ask yourself before changing it:
+- What is this system trying to make easier or safer?
+  Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
+- Which folders define rules, which store live records, and which are future-facing?
+  Prompt: Name the exact files or records someone should open before trusting this answer.
+- Does any statement here overpromise GitHub, dashboard, agent, or app capabilities that are not live yet?
+  Prompt: Mark the item as live now, planned later, or out of scope; do not leave it implied.
+
+Cross-check [[question|question.md]], [[source-of-truth/files-and-folders|Files And Folders]], [[lifecycle]], and [[dashboard/README|Dashboard Specification]].
+
+
 This folder defines the operating model for an agent-driven project system. It gives every initiative the same path from a raw idea to a final decision so work can be evaluated consistently, automated safely, and audited later.
 
 Related notes: [[lifecycle]], [[decision-gates]], [[dashboard-model]], [[dashboard/README|Dashboard Specification]], [[agent-responsibilities]]
@@ -89,7 +104,7 @@ Use one primary GitHub issue per initiative and keep it open through the lifecyc
 | [[agent-responsibilities]] | Stage-by-stage boundary between agent autonomy and human approval. |
 | [[operating-model/agent-status-schema/README|Agent Status Schema]] | Runtime status rules, templates, and dashboard contract for active agents. |
 | [[operating-model/decision-record-system/README|Decision Record System]] | Rules, templates, naming, and workflow for durable load-bearing decisions. |
-| [[scheduled-agents|Scheduled Agents]] | Step 8 recurring agent roster, schedules, workflows, outputs, and approval boundaries. |
+| [[agents-overview|Agents Overview]] | Step 8 agent roster, optional schedules, workflows, outputs, and approval boundaries. |
 | [[guardrails|Guardrails]] | Shared autonomy ramp, safe-action rules, and approval-boundary guardrails. |
 | [[source-of-truth/files-and-folders|Files And Folders]] | Canonical file and folder contract for durable knowledge under the repo root `source-of-truth/` folder. |
 | [[source-of-truth/github|GitHub]] | Canonical GitHub backlog and `.env` integration contract. |
@@ -164,13 +179,9 @@ Use these docs together:
 | Document | Use it for |
 | --- | --- |
 | [[dashboard/README|Dashboard Specification]] | Overview of the dashboard specification and how it fits the operating model. |
-| [[dashboard/dashboard-tabs|Dashboard Tabs]] | Purpose, contents, rules, and exclusions for each initial dashboard tab. |
-| [[dashboard/dashboard-card-contract|Dashboard Card Contract]] | Reusable dashboard card fields and per-card validation rules. |
-| [[dashboard/dashboard-data-contract|Dashboard Data Contract]] | Source read contract, trust precedence, stale rules, and blocking conflicts. |
-| [[dashboard/dashboard-actions|Dashboard Actions]] | Allowed human actions, audit trail expectations, and write safety rules. |
-| [[dashboard/dashboard-mvp|Dashboard MVP]] | First buildable scope, done criteria, and recommended build order. |
+| [[dashboard/common-spec|Common Dashboard Spec]] | Shared dashboard folder structure, tab contracts, card rules, source rules, actions, metrics, and rebuild requirements. |
 
-## Step 8: Scheduled Agents
+## Step 8: Agents
 
 Step 8 defines the recurring agents that operate the system on a daily, weekly, or event-driven cadence.
 
@@ -180,10 +191,10 @@ Use these docs together:
 
 | Document | Use it for |
 | --- | --- |
-| [[scheduled-agents|Scheduled Agents]] | Overview of the recurring agent system and its repo connections. |
-| [[agent-roster|Agent Roster]] | Canonical list of scheduled agents, their purpose, triggers, and outputs. |
-| [[agent-schedules|Agent Schedules]] | Daily, weekly, and event-driven cadence rules for each scheduled agent. |
-| [[agent-workflows|Agent Workflows]] | Step-by-step operating flow for each scheduled agent. |
+| [[agents-overview|Agents Overview]] | Overview of the agent system and its repo connections. |
+| [[agent-roster|Agent Roster]] | Canonical list of agents, their purpose, triggers, and outputs. |
+| [[agent-schedules|Agent Schedules]] | Daily, weekly, and event-driven cadence rules for each agent. |
+| [[agent-workflows|Agent Workflows]] | Step-by-step operating flow for each agent. |
 | [[agent-output-contracts|Agent Output Contracts]] | Required output fields and dashboard-ready reporting format. |
 | [[agent-dashboard-routing|Agent Dashboard Routing]] | Rules for how each agent populates the dashboard tabs and cards. |
 | [[agent-approval-rules|Agent Approval Rules]] | Approval boundaries, escalation rules, and prohibited self-approval behavior. |
@@ -209,6 +220,6 @@ If a later implementation conflicts with this documentation, update the docs fir
 - [[dashboard/README|Dashboard Specification]]
 - [[operating-model/agent-status-schema/README|Agent Status Schema]]
 - [[operating-model/decision-record-system/README|Decision Record System]]
-- [[scheduled-agents|Scheduled Agents]]
+- [[agents-overview|Agents Overview]]
 
 <!-- Reviewed and Approved on -->

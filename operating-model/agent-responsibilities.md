@@ -6,6 +6,21 @@ aliases:
 
 # Agent Responsibilities
 
+## Before You Edit This File
+
+Frame of mind: This is the stage-level authority file for agents. It defines what agents prepare, what they may execute, and what humans still decide.
+
+Ask yourself before changing it:
+- At each lifecycle stage, what may an agent do without approval?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- Which choices require a human because they affect strategy, risk, spend, scope, launch, or architecture?
+  Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
+- Does this file stay above agent-specific rules in authority?
+  Prompt: Name the exposure, who can approve the risk, and what evidence proves it is controlled.
+
+Cross-check [[lifecycle]], [[decision-gates|Decision Gates]], [[approval-boundaries|Approval Boundaries]], and [[agents/agent-approval-rules|Agent Approval Rules]].
+
+
 This document defines what agents may do at each stage and what still requires human approval. The goal is to keep execution fast without allowing agents to make unbounded strategic, financial, legal, or user-impacting decisions.
 
 See also: [[lifecycle]], [[decision-gates]], [[dashboard-model]], [[operating-model/README|Operating Model Overview]]
