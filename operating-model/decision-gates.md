@@ -134,6 +134,6 @@ For where these records surface operationally, see [[dashboard-model#Dashboard D
 - [[lifecycle]]
 - [[agent-responsibilities]]
 - [[dashboard-model]]
-- [[dashboard/common-spec|Common Dashboard Spec]]
+- [[common-spec|Common Dashboard Spec]]
 
 <!-- Reviewed and Approved on -->

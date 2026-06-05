@@ -17,7 +17,7 @@ Ask yourself before changing it:
 - When is a status archived instead of left active?
   Prompt: Keep this to current state: what is happening, what is blocked, and the next action.
 
-Cross-check [[agent-status-file-contract|Agent Status File Contract]], [[agent-approval-rules|Agent Approval Rules]], and [[dashboard/common-spec|Common Dashboard Spec]].
+Cross-check [[agent-status-file-contract|Agent Status File Contract]], [[agent-approval-rules|Agent Approval Rules]], and [[common-spec|Common Dashboard Spec]].
 
 
 This file defines when agent status must be created, updated, linked, and closed.

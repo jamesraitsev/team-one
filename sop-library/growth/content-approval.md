@@ -17,7 +17,7 @@ Ask yourself before changing it:
 - What record proves approval happened?
   Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
 
-Cross-check [[copy-review|Copy Review]], [[launch-planning|Launch Planning]], and [[dashboard/common-spec|Common Dashboard Spec]].
+Cross-check [[copy-review|Copy Review]], [[launch-planning|Launch Planning]], and [[common-spec|Common Dashboard Spec]].
 
 
 Version: `v1.0`

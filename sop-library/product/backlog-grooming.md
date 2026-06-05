@@ -17,7 +17,7 @@ Ask yourself before changing it:
 - Does reprioritization require human approval?
   Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
 
-Cross-check [[source-of-truth/github|GitHub]], [[agent-approval-rules|Agent Approval Rules]], and [[agents/agent-roster|Agent Roster]].
+Cross-check [[source-of-truth/github|GitHub]], [[agent-approval-rules|Agent Approval Rules]], and [[agent-documentation/agent-roster|Agent Roster]].
 
 
 Version: `v1.0`

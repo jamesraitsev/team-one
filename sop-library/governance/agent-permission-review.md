@@ -17,7 +17,7 @@ Ask yourself before changing it:
 - Can dashboard and status records show what the agent did?
   Prompt: Name the exact files or records someone should open before trusting this answer.
 
-Cross-check [[approval-boundaries|Approval Boundaries]], [[autonomy-ramp|Autonomy Ramp]], and [[agents/agent-approval-rules|Agent Approval Rules]].
+Cross-check [[approval-boundaries|Approval Boundaries]], [[autonomy-ramp|Autonomy Ramp]], and [[agent-documentation/agent-approval-rules|Agent Approval Rules]].
 
 
 Version: `v1.0`

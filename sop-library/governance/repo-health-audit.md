@@ -18,7 +18,7 @@ Ask yourself before changing it:
 - How does the score compare to yesterday?
   Prompt: Read the prior score first, then state score, delta, and why it moved.
 
-Cross-check [[agents/profiles/linda/README|Linda]], [[source-of-truth/memory/linda-repo-health|Linda Repo Health Memory]], [[source-of-truth/files-and-folders|Files And Folders]], and [[lookherefirst|Look Here First]].
+Cross-check [[agent-documentation/profiles/linda/README|Linda]], [[source-of-truth/memory/linda-repo-health|Linda Repo Health Memory]], [[source-of-truth/files-and-folders|Files And Folders]], and [[lookherefirst|Look Here First]].
 
 Version: `v1.0`
 
@@ -37,7 +37,7 @@ This SOP is optimized for a short operator report, not a comprehensive essay.
 - `source-of-truth/decisions/index.md`
 - `source-of-truth/files-and-folders.md`
 - `sop-library/sop-registry.md`
-- `agents/agent-roster.md`
+- `agent-documentation/agent-roster.md`
 - `source-of-truth/memory/linda-repo-health.md`
 
 ## Procedure
@@ -88,7 +88,7 @@ Stop and report a blocker when:
 
 ## Related
 
-- [[agents/profiles/linda/README|Linda]]
+- [[agent-documentation/profiles/linda/README|Linda]]
 - [[source-of-truth/memory/linda-repo-health|Linda Repo Health Memory]]
 - [[source-of-truth/files-and-folders|Files And Folders]]
 - [[sop-registry|SOP Registry]]

@@ -18,12 +18,12 @@ Ask yourself before changing it:
 - What minimum approval packet should be created when the answer is unclear?
   Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
 
-Cross-check [[guardrails|Guardrails]], [[agent-responsibilities|Agent Responsibilities]], [[dashboard/common-spec|Common Dashboard Spec]], and [[agent-approval-rules|Agent Approval Rules]].
+Cross-check [[guardrails|Guardrails]], [[agent-responsibilities|Agent Responsibilities]], [[common-spec|Common Dashboard Spec]], and [[agent-approval-rules|Agent Approval Rules]].
 
 
 This note defines what agents may do without approval and what always requires approval.
 
-Use it with [[guardrails|Guardrails]], [[autonomy-ramp|Autonomy Ramp]], [[agent-approval-rules|Agent Approval Rules]], and [[dashboard/common-spec|Common Dashboard Spec]].
+Use it with [[guardrails|Guardrails]], [[autonomy-ramp|Autonomy Ramp]], [[agent-approval-rules|Agent Approval Rules]], and [[common-spec|Common Dashboard Spec]].
 
 ## Safe To Do Without Approval
 

@@ -17,7 +17,7 @@ Ask yourself before changing it:
 - What result would make us pause, narrow, or kill it?
   Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
 
-Cross-check [[idea-triage|Idea Triage]], [[decision-gates|Decision Gates]], and [[agents/agent-roster|Agent Roster]].
+Cross-check [[idea-triage|Idea Triage]], [[decision-gates|Decision Gates]], and [[agent-documentation/agent-roster|Agent Roster]].
 
 
 Version: `v1.0`

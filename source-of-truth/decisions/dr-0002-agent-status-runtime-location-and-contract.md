@@ -20,7 +20,7 @@ Ask yourself before changing it:
 - Would dashboard behavior break if this contract changed?
   Prompt: Describe what the human should see or do from the dashboard in one practical sentence.
 
-Cross-check [[operating-model/agent-status-schema/README|Agent Status Schema]], [[source-of-truth/agent-status/index|Agent Status Index]], and [[dashboard/common-spec|Common Dashboard Spec]].
+Cross-check [[operating-model/agent-status-schema/README|Agent Status Schema]], [[source-of-truth/agent-status/index|Agent Status Index]], and [[common-spec|Common Dashboard Spec]].
 
 
 ## Metadata

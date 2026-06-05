@@ -17,7 +17,7 @@ Ask yourself before changing it:
 - Does any dashboard action need approval before it writes anything?
   Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
 
-Cross-check [[dashboard/README|Dashboard Specification]], [[dashboard/common-spec|Common Dashboard Spec]], and [[dashboard/common-spec|Common Dashboard Spec]].
+Cross-check [[2. dashboard/README|Dashboard Specification]], [[common-spec|Common Dashboard Spec]], and [[common-spec|Common Dashboard Spec]].
 
 
 Version: `v1.0`

@@ -17,7 +17,7 @@ Ask yourself before changing it:
 - Does every row link to the source status file?
   Prompt: Name the exact files or records someone should open before trusting this answer.
 
-Cross-check [[source-of-truth/agent-status/index|Agent Status Index]], [[agent-status-file-contract|Agent Status File Contract]], and [[dashboard/common-spec|Common Dashboard Spec]].
+Cross-check [[source-of-truth/agent-status/index|Agent Status Index]], [[agent-status-file-contract|Agent Status File Contract]], and [[common-spec|Common Dashboard Spec]].
 
 
 Use this table format for `source-of-truth/agent-status/index.md`.

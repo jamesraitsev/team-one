@@ -18,12 +18,12 @@ Ask yourself before changing it:
 - What belongs in the detailed dashboard folder instead?
   Prompt: Describe what the human should see or do from the dashboard in one practical sentence.
 
-Cross-check [[dashboard/README|Dashboard Specification]], [[lifecycle]], [[decision-gates|Decision Gates]], and [[agent-status-dashboard-contract|Agent Status Dashboard Contract]].
+Cross-check [[2. dashboard/README|Dashboard Specification]], [[lifecycle]], [[decision-gates|Decision Gates]], and [[agent-status-dashboard-contract|Agent Status Dashboard Contract]].
 
 
 This document defines how the initiative lifecycle should appear in a dashboard so humans and agents can see flow, blockers, approvals, and next actions without opening every ticket.
 
-For the decision-centered Step 6 dashboard specification, use [[dashboard/README|Dashboard Specification]] with this document.
+For the decision-centered Step 6 dashboard specification, use [[2. dashboard/README|Dashboard Specification]] with this document.
 
 See also: [[lifecycle]], [[decision-gates]], [[agent-responsibilities]], [[operating-model/README|Operating Model Overview]]
 
@@ -241,9 +241,9 @@ This data contract should drive both dashboard rendering and automation.
 ## Related
 
 - [[operating-model/README|Operating Model Overview]]
-- [[dashboard/README|Dashboard Specification]]
-- [[dashboard/common-spec|Common Dashboard Spec]]
-- [[dashboard/common-spec|Common Dashboard Spec]]
+- [[2. dashboard/README|Dashboard Specification]]
+- [[common-spec|Common Dashboard Spec]]
+- [[common-spec|Common Dashboard Spec]]
 - [[operating-model/agent-status-schema/agent-status-dashboard-contract|Agent Status Dashboard Contract]]
 
 <!-- Reviewed and Approved on -->

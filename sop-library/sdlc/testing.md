@@ -17,7 +17,7 @@ Ask yourself before changing it:
 - What failure blocks release or needs human risk acceptance?
   Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
 
-Cross-check [[feature-delivery|Feature Delivery]], [[release-checklist|Release Checklist]], and [[agents/agent-roster|Agent Roster]].
+Cross-check [[feature-delivery|Feature Delivery]], [[release-checklist|Release Checklist]], and [[agent-documentation/agent-roster|Agent Roster]].
 
 
 Version: `v1.0`

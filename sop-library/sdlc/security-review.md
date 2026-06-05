@@ -17,7 +17,7 @@ Ask yourself before changing it:
 - What severity and unblock action should be recorded?
   Prompt: Name the risk, severity, and the smallest safe next step.
 
-Cross-check [[agent-permission-review|Agent Permission Review]], [[approval-boundaries|Approval Boundaries]], and [[tech/README|Tech]].
+Cross-check [[agent-permission-review|Agent Permission Review]], [[approval-boundaries|Approval Boundaries]], and [[spec|Tech]].
 
 
 Version: `v1.0`

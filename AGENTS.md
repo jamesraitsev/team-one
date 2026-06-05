@@ -1,46 +1,107 @@
-## Before You Edit This File
+# Tasty Agent Rules
 
-Frame of mind: This is the repo's house rule sheet. Read it as the editor's contract: what kind of repo this is, which layers are authoritative, and how future changes should be validated.
+## Purpose
 
-Ask yourself before changing it:
-- Does this guidance help a non-technical editor avoid breaking the operating model?
-  Prompt: Answer in plain English first, then decide which file or decision record should hold the final version.
-- Does it tell agents where they may write, and where they must only read?
-  Prompt: Answer in plain English first, then decide which file or decision record should hold the final version.
-- Does it avoid inventing live GitHub, dashboard, or implementation state?
-  Prompt: Mark the item as live now, planned later, or out of scope; do not leave it implied.
+This file defines how agents should work in this project right now.
 
-Cross-check [[lookherefirst|Look Here First]], [[question|question.md]], and [[source-of-truth/files-and-folders|Files And Folders]].
+Scope is limited to the `Tasty` project under `dashboard/tasty/`.
 
-## Repo Guidance
+This project is spec-first. Markdown is the product surface. Implementation is rebuilt from the spec only when James explicitly asks for a build or implementation update.
 
-This repository is a documentation-first operating model. Treat Markdown as the product.
+## Default Edit Mode
 
-## File Types
+Unless James explicitly asks for implementation changes, edit specifications and documentation only.
 
-- Prefer editing existing `.md` files instead of creating new structure unless the change clearly needs a new note.
-- Keep notes Obsidian-friendly with wiki links like `[[note-name|Note Name]]` where the target exists.
-- Maintain frontmatter aliases and `## Related` sections on durable notes.
+Default behavior:
 
-## Consistency Rules
+- Change `.md` files, agent docs, TOML agent instructions, and other specification files when James asks to change the project model.
+- Do not change implementation code, application files, scripts, package files, generated files, database code, frontend code, backend code, or runtime behavior unless James specifically asks for code or application implementation changes.
+- Do not wire a new spec into the app unless James explicitly asks to update the implementation.
+- When in doubt, stop and ask whether James wants a spec-only change or an implementation change.
 
-- When a rule changes, update every governing note that defines or depends on that rule.
-- Keep agent docs synchronized across roster, schedules, workflows, routing, and approval boundaries when adding or changing an agent.
-- Keep SOP references aligned with `sop-library/sop-registry.md`.
-- Do not invent live GitHub configuration, issue IDs, or secret paths when the docs are still placeholder-only.
+The path to implementation is: update the spec first, then rebuild from that spec only when James asks for it.
 
-## Source Of Truth
+## No Invented UI
 
-- Treat `source-of-truth/` as the durable knowledge layer.
-- Treat `source-of-truth/memory/` as durable recurring agent memory, not as a replacement for decisions or journals.
-- Treat `sop-library/` as the reusable procedure layer.
-- Treat `operating-model/` and `dashboard/` as governing specification layers.
+Every visible UI label, heading, timestamp label, explanatory sentence, section name, navigation item, card title, status label, and placement rule must be defined in a Markdown spec before it appears in production code.
 
-## Core Agents
+Implementation code may render, parse, format, and arrange spec-backed content, but it must not invent product copy or visible dashboard concepts.
 
-- `Backlog Groomer` is part of the baseline agent roster.
-- Use the definitions in `agents/agent-roster.md`, `agents/agent-schedules.md`, `agents/agent-workflows.md`, `agents/agent-dashboard-routing.md`, and `agents/agent-approval-rules.md` as the source of truth for its behavior.
+If a UI element is useful but not defined in Markdown, add or update the relevant `.md` spec first. If the right spec file is unclear, ask James before changing code.
+
+## Tasty Sources
+
+For Tasty work, read and write inside the Tasty project structure unless James says otherwise.
+
+| Path | Role |
+| --- | --- |
+| `dashboard/tasty/about.md` | Project identity and dashboard context. |
+| `dashboard/tasty/Score.md` | Linda's Tasty scoring method. |
+| `dashboard/tasty/tabs/header.md` | Shared Tasty dashboard header specification. |
+| `dashboard/tasty/tabs/` | Tasty dashboard tab specifications. |
+| `dashboard/tasty/resources/` | Project inputs, including SOW and agreement files. |
+| `dashboard/tasty/resources/sow/sow.md` | Main source of truth for Tasty scope. |
+| `dashboard/tasty/memory/` | Tasty project memory and evidence of what happened. |
+| `dashboard/tasty/todo/` | Tasty questions, missing inputs, and follow-ups. |
+
+Do not invent live project state, GitHub configuration, owners, dates, scores, or completed work. If the source is missing, say it is missing.
+
+## Agent Authority
+
+Linda is the only named agent for Tasty right now.
+
+Linda is the decision-maker for Tasty project interpretation, scoring judgment, memory classification, and dashboard-ready recommendations unless James overrides her.
+
+Linda's current authority is defined by:
+
+- `agent-documentation/profiles/linda/README.md`
+- `.codex/agents/linda.toml`
+- `dashboard/tasty/Score.md`
+- `dashboard/tasty/tabs/home.md`
+
+When James explicitly asks Linda to sync Markdown specs into the UI or production code, Linda may use the `spec-to-code-sync` skill.
+
+Do not introduce other agents, rosters, schedules, workflows, or approval rules into this file unless James explicitly asks for them.
+
+## Linda Memory Rules
+
+For Tasty, Linda reads and writes project memory in:
+
+- `dashboard/tasty/memory/`
+
+A Tasty memory is a Markdown record that captures one or more of these:
+
+- an action taken
+- a decision made
+- a commitment or owner named
+- new information discovered
+- an interview, document review, observation, analysis, or workshop completed
+- a finding, risk, friction point, dependency, or blocker identified
+- an output drafted, reviewed, accepted, or delivered
+- a material change in project direction, scope, timing, or confidence
+- a question James answered that changes what Linda should believe about the project
+
+Chat-only claims are not Tasty memory until written into `dashboard/tasty/memory/` or another explicit project source.
+
+## Scoring Rule
+
+Tasty scoring is governed by `dashboard/tasty/Score.md`.
+
+Linda must use `dashboard/tasty/resources/sow/sow.md` as the main scope source and `dashboard/tasty/memory/` as the evidence layer.
+
+If `dashboard/tasty/memory/` is missing, empty, or contains no evidence of project action, Linda should report:
+
+```md
+Status: Not started
+Score: -
+```
+
+Do not convert `Not started` into `0/100`.
 
 ## Validation
 
-- After documentation changes, verify wiki links still resolve and that important hub notes still interlink cleanly.
+After documentation changes:
+
+- Check that important Tasty links still point to existing files.
+- Keep `dashboard/tasty/Score.md`, `dashboard/tasty/tabs/home.md`, Linda's README, and Linda's TOML consistent when scoring or memory rules change.
+- Do not run app builds or change app code unless James explicitly asks for implementation work.

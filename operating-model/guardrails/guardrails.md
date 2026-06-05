@@ -18,12 +18,12 @@ Ask yourself before changing it:
 - Does this rule protect humans from hidden cost, security, legal, or public-impact exposure?
   Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
 
-Cross-check [[approval-boundaries|Approval Boundaries]], [[safe-actions|Safe Actions]], [[autonomy-ramp|Autonomy Ramp]], and [[agents/agent-approval-rules|Agent Approval Rules]].
+Cross-check [[approval-boundaries|Approval Boundaries]], [[safe-actions|Safe Actions]], [[autonomy-ramp|Autonomy Ramp]], and [[agent-documentation/agent-approval-rules|Agent Approval Rules]].
 
 
 This folder defines the autonomy and approval guardrails for the operating model.
 
-Use it with [[operating-model/README|Operating Model Overview]], [[dashboard/README|Dashboard Specification]], [[agent-approval-rules|Agent Approval Rules]], [[decision-gates|Decision Gates]], and [[dashboard/common-spec|Common Dashboard Spec]].
+Use it with [[operating-model/README|Operating Model Overview]], [[2. dashboard/README|Dashboard Specification]], [[agent-approval-rules|Agent Approval Rules]], [[decision-gates|Decision Gates]], and [[common-spec|Common Dashboard Spec]].
 
 ## Purpose
 

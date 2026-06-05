@@ -17,7 +17,7 @@ Ask yourself before changing it:
 - What conflicts should block dashboard actions?
   Prompt: Describe what the human should see or do from the dashboard in one practical sentence.
 
-Cross-check [[dashboard/common-spec|Common Dashboard Spec]], [[dashboard/common-spec|Common Dashboard Spec]], and [[agent-status-file-contract|Agent Status File Contract]].
+Cross-check [[common-spec|Common Dashboard Spec]], [[common-spec|Common Dashboard Spec]], and [[agent-status-file-contract|Agent Status File Contract]].
 
 
 This file defines how the dashboard should render agent runtime status from `source-of-truth/agent-status/`.

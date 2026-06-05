@@ -17,7 +17,7 @@ Ask yourself before changing it:
 - What fields must not contain decisions that belong elsewhere?
   Prompt: If future work depends on the answer, write it as a decision record, not just a note.
 
-Cross-check [[agent-status-rules|Agent Status Rules]], [[agent-status-template|Agent Status Template]], and [[dashboard/common-spec|Common Dashboard Spec]].
+Cross-check [[agent-status-rules|Agent Status Rules]], [[agent-status-template|Agent Status Template]], and [[common-spec|Common Dashboard Spec]].
 
 
 This file defines the runtime file model for agent status records.

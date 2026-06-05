@@ -17,7 +17,7 @@ Ask yourself before changing it:
 - What public, spend, or timing decisions require approval?
   Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
 
-Cross-check [[content-approval|Content Approval]], [[copy-review|Copy Review]], and [[dashboard/common-spec|Common Dashboard Spec]].
+Cross-check [[content-approval|Content Approval]], [[copy-review|Copy Review]], and [[common-spec|Common Dashboard Spec]].
 
 
 Version: `v1.0`

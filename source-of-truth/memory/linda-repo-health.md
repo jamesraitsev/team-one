@@ -18,7 +18,7 @@ Ask yourself before changing it:
 - What should Linda carry forward?
   Prompt: Preserve unresolved must-look items until they are fixed, rejected, or converted into a decision record.
 
-Cross-check [[agents/profiles/linda/README|Linda]], [[repo-health-audit|Repo Health Audit]], and [[source-of-truth/decisions/index|Decision Index]].
+Cross-check [[agent-documentation/profiles/linda/README|Linda]], [[repo-health-audit|Repo Health Audit]], and [[source-of-truth/decisions/index|Decision Index]].
 
 ## Current Summary
 
@@ -48,7 +48,7 @@ Must look:
 1. `source-of-truth/files-and-folders.md` still lists future folders as approved durable locations even though only `agent-status/`, `decisions/`, `ideas/`, and `memory/` exist today. This makes the repo feel more live than it is.
 2. `source-of-truth/github.md` says GitHub Issues are the executable backlog, but the configuration remains placeholder-only. Agents correctly mention file-first fallback elsewhere, so the canonical GitHub contract needs to catch up.
 3. `lookherefirst.md` is strong sequencing, but the repo still has more system surface than operating surface. The next gain is reducing what must be run first, not adding more docs.
-4. The agent system is structurally coherent now. Linda and the other agents live consistently under `agents/profiles/`, but the system needs a v1 activation order before daily runs become meaningful.
+4. The agent system is structurally coherent now. Linda and the other agents live consistently under `agent-documentation/profiles/`, but the system needs a v1 activation order before daily runs become meaningful.
 5. Link health is mostly acceptable, but examples/templates create unresolved wiki-link noise. This will make future automated checks complain unless placeholders are marked or excluded.
 
 One-day work:
@@ -83,6 +83,6 @@ Challenge:
 
 ## Related
 
-- [[agents/profiles/linda/README|Linda]]
+- [[agent-documentation/profiles/linda/README|Linda]]
 - [[repo-health-audit|Repo Health Audit]]
 - [[source-of-truth/files-and-folders|Files And Folders]]

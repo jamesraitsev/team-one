@@ -19,12 +19,12 @@ Ask yourself before changing it:
 - What actions remain permanently human-gated?
   Prompt: Say whether this role may decide, recommend, draft, or only inform; then name the human handoff.
 
-Cross-check [[guardrails|Guardrails]], [[approval-boundaries|Approval Boundaries]], [[dashboard/README|Dashboard Specification]], and [[agent-approval-rules|Agent Approval Rules]].
+Cross-check [[guardrails|Guardrails]], [[approval-boundaries|Approval Boundaries]], [[2. dashboard/README|Dashboard Specification]], and [[agent-approval-rules|Agent Approval Rules]].
 
 
 This note defines how autonomy increases over time.
 
-Use it with [[guardrails|Guardrails]], [[dashboard/README|Dashboard Specification]], [[agent-approval-rules|Agent Approval Rules]], and [[agent-workflows|Agent Workflows]].
+Use it with [[guardrails|Guardrails]], [[2. dashboard/README|Dashboard Specification]], [[agent-approval-rules|Agent Approval Rules]], and [[agent-workflows|Agent Workflows]].
 
 ## Core Rule
 

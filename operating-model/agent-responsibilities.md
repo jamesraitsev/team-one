@@ -18,7 +18,7 @@ Ask yourself before changing it:
 - Does this file stay above agent-specific rules in authority?
   Prompt: Name the exposure, who can approve the risk, and what evidence proves it is controlled.
 
-Cross-check [[lifecycle]], [[decision-gates|Decision Gates]], [[approval-boundaries|Approval Boundaries]], and [[agents/agent-approval-rules|Agent Approval Rules]].
+Cross-check [[lifecycle]], [[decision-gates|Decision Gates]], [[approval-boundaries|Approval Boundaries]], and [[agent-documentation/agent-approval-rules|Agent Approval Rules]].
 
 
 This document defines what agents may do at each stage and what still requires human approval. The goal is to keep execution fast without allowing agents to make unbounded strategic, financial, legal, or user-impacting decisions.

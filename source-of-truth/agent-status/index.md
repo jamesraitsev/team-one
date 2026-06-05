@@ -18,7 +18,7 @@ Ask yourself before changing it:
 - Is any decision or journal detail being duplicated here instead of linked?
   Prompt: Name the exact files or records someone should open before trusting this answer.
 
-Cross-check [[agent-status-file-contract|Agent Status File Contract]], [[agent-status-index-template|Agent Status Index Template]], and [[agents/agent-roster|Agent Roster]].
+Cross-check [[agent-status-file-contract|Agent Status File Contract]], [[agent-status-index-template|Agent Status Index Template]], and [[agent-documentation/agent-roster|Agent Roster]].
 
 
 This index summarizes active runtime status files in `source-of-truth/agent-status/`.

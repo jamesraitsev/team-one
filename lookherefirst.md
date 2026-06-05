@@ -105,57 +105,57 @@ This list intentionally excludes `.git/`, `.DS_Store`, generated `artifacts/`, a
 
 ## Agents
 
-58. [[agents/README|Agents Folder]] - Explain the portable agent folder structure and why schedules are only cadence rules.
-59. [[agents/agents-overview|Agents Overview]] - Define the agent system and explain that schedules are optional cadence, not a different kind of agent.
-60. [[agents/profiles/README|Agent Profiles]] - Define the shared folder structure and index for every individual project-curator agent.
-61. [[agents/profiles/daily-chief-of-staff-brief/README|Daily Chief of Staff Brief]] - Define the daily summary agent, its boundaries, inputs, outputs, and handoffs.
-62. [[agents/profiles/backlog-groomer/README|Backlog Groomer]] - Define the backlog-quality agent, ranking limits, and GitHub/file-first behavior.
-63. [[agents/profiles/product-reviewer/README|Product Reviewer]] - Define the product-value and validation agent.
-64. [[agents/profiles/cto-reviewer/README|CTO Reviewer]] - Define the technical-readiness agent, architecture boundaries, and tech cross-references.
-65. [[agents/profiles/growth-reviewer/README|Growth Reviewer]] - Define the launch, positioning, channel, and experiment agent.
-66. [[agents/profiles/weekly-cfo-cost-and-progress-reviewer/README|Weekly CFO Cost and Progress Reviewer]] - Define the cost, throughput, ROI, and spend-review agent.
-67. [[agents/profiles/qa-release-reviewer/README|QA / Release Reviewer]] - Define the test, release-readiness, and regression-risk agent.
-68. [[agents/profiles/security-secrets-reviewer/README|Security / Secrets Reviewer]] - Define the secrets, auth, permissions, and security-risk agent.
-69. [[agents/profiles/customer-signal-reviewer/README|Customer Signal Reviewer]] - Define the feedback, analytics, complaints, and demand-signal agent.
-70. [[agents/profiles/linda/README|Linda]] - Define Linda as the repo-health curator and audit agent.
-71. [[agents/profiles/source-of-truth-steward/README|Source-of-Truth Steward]] - Define the file-integrity, backlink, and durable-record-health agent.
-72. [[agents/profiles/decision-record-steward/README|Decision Record Steward]] - Define the durable-decision hygiene and conflict-review agent.
-73. [[agents/agent-roster|Agent Roster]] - Define the canonical table of agents and link each profile.
-74. [[agents/agent-schedules|Agent Schedules]] - Define cadence rules for daily, weekly, event-driven, and on-demand runs.
-75. [[agents/agent-workflows|Agent Workflows]] - Define orchestration steps only: read, status, route, stop, approve, and write.
-76. [[agents/agent-output-contracts|Agent Output Contracts]] - Define the output packet fields every agent must produce.
-77. [[agents/agent-dashboard-routing|Agent Dashboard Routing]] - Define where each agent sends cards, approvals, metrics, and blockers.
-78. [[agents/agent-approval-rules|Agent Approval Rules]] - Define agent-specific approval boundaries without weakening operating-model guardrails.
-79. [[agents/memory-and-decision-hygiene|Memory And Decision Hygiene]] - Define status, memory, journal, decision, and artifact write boundaries for agents.
-80. [[agents/agent-template|Agent Template]] - Define the standard template for any future project-curator agent profile.
+58. [[agent-documentation/README|Agent Documentation]] - Explain the portable agent documentation structure and why schedules are only cadence rules.
+59. [[agent-documentation/agents-overview|Agents Overview]] - Define the agent system and explain that schedules are optional cadence, not a different kind of agent.
+60. [[agent-documentation/profiles/README|Agent Profiles]] - Define the shared folder structure and index for every individual project-curator agent.
+61. [[agent-documentation/profiles/daily-chief-of-staff-brief/README|Daily Chief of Staff Brief]] - Define the daily summary agent, its boundaries, inputs, outputs, and handoffs.
+62. [[agent-documentation/profiles/backlog-groomer/README|Backlog Groomer]] - Define the backlog-quality agent, ranking limits, and GitHub/file-first behavior.
+63. [[agent-documentation/profiles/product-reviewer/README|Product Reviewer]] - Define the product-value and validation agent.
+64. [[agent-documentation/profiles/cto-reviewer/README|CTO Reviewer]] - Define the technical-readiness agent, architecture boundaries, and tech cross-references.
+65. [[agent-documentation/profiles/growth-reviewer/README|Growth Reviewer]] - Define the launch, positioning, channel, and experiment agent.
+66. [[agent-documentation/profiles/weekly-cfo-cost-and-progress-reviewer/README|Weekly CFO Cost and Progress Reviewer]] - Define the cost, throughput, ROI, and spend-review agent.
+67. [[agent-documentation/profiles/qa-release-reviewer/README|QA / Release Reviewer]] - Define the test, release-readiness, and regression-risk agent.
+68. [[agent-documentation/profiles/security-secrets-reviewer/README|Security / Secrets Reviewer]] - Define the secrets, auth, permissions, and security-risk agent.
+69. [[agent-documentation/profiles/customer-signal-reviewer/README|Customer Signal Reviewer]] - Define the feedback, analytics, complaints, and demand-signal agent.
+70. [[agent-documentation/profiles/linda/README|Linda]] - Define Linda as the repo-health curator and audit agent.
+71. [[agent-documentation/profiles/source-of-truth-steward/README|Source-of-Truth Steward]] - Define the file-integrity, backlink, and durable-record-health agent.
+72. [[agent-documentation/profiles/decision-record-steward/README|Decision Record Steward]] - Define the durable-decision hygiene and conflict-review agent.
+73. [[agent-documentation/agent-roster|Agent Roster]] - Define the canonical table of agents and link each profile.
+74. [[agent-documentation/agent-schedules|Agent Schedules]] - Define cadence rules for daily, weekly, event-driven, and on-demand runs.
+75. [[agent-documentation/agent-workflows|Agent Workflows]] - Define orchestration steps only: read, status, route, stop, approve, and write.
+76. [[agent-documentation/agent-output-contracts|Agent Output Contracts]] - Define the output packet fields every agent must produce.
+77. [[agent-documentation/agent-dashboard-routing|Agent Dashboard Routing]] - Define where each agent sends cards, approvals, metrics, and blockers.
+78. [[agent-documentation/agent-approval-rules|Agent Approval Rules]] - Define agent-specific approval boundaries without weakening operating-model guardrails.
+79. [[agent-documentation/memory-and-decision-hygiene|Memory And Decision Hygiene]] - Define status, memory, journal, decision, and artifact write boundaries for agents.
+80. [[agent-documentation/agent-template|Agent Template]] - Define the standard template for any future project-curator agent profile.
 
 ## Dashboard Specification
 
 81. [[operating-model/dashboard-model|Dashboard Model]] - Define the conceptual dashboard relationship to lifecycle, status, blockers, and approvals.
-82. [[dashboard/README|Dashboard Specification]] - Define the one-root-folder dashboard definition layer and project folder rule.
-83. [[dashboard/common-spec|Common Dashboard Spec]] - Define shared dashboard rules, tab contracts, card rules, source rules, actions, metrics, and rebuild requirements.
-84. [[dashboard/linda/dashboard|Linda Dashboard]] - Define the current Linda project dashboard and link to its tab specs.
-85. [[dashboard/linda/tabs/home|Linda Home Tab]] - Define the active Home tab.
-86. [[dashboard/linda/tabs/summary|Linda Summary Tab]] - Define the active Summary tab.
-87. [[dashboard/linda/tabs/focus|Linda Focus Tab]] - Define the active Focus tab.
-88. [[dashboard/linda/tabs/calendar|Linda Calendar Tab]] - Define the active Calendar tab.
-89. [[dashboard/linda/tabs/pending-decisions|Linda Pending Decisions Tab]] - Define the active Pending Decisions tab.
-90. [[dashboard/linda/tabs/run-log|Linda Run Log Tab]] - Define the active Run Log tab.
-91. [[dashboard/linda/tabs/hygiene|Linda Hygiene Tab]] - Define the active Hygiene tab.
+82. [[2. dashboard/README|Dashboard Specification]] - Define the one-root-folder dashboard definition layer and project folder rule.
+83. [[common-spec|Common Dashboard Spec]] - Define shared dashboard rules, tab contracts, card rules, source rules, actions, metrics, and rebuild requirements.
+84. [[about|Linda Dashboard]] - Define the current Linda project dashboard and link to its tab specs.
+85. [[home|Linda Home Tab]] - Define the active Home tab.
+86. [[summary|Linda Summary Tab]] - Define the active Summary tab.
+87. [[focus|Linda Focus Tab]] - Define the active Focus tab.
+88. [[calendar|Linda Calendar Tab]] - Define the active Calendar tab.
+89. [[pending-decisions|Linda Pending Decisions Tab]] - Define the active Pending Decisions tab.
+90. [[run-log|Linda Run Log Tab]] - Define the active Run Log tab.
+91. [[hygiene|Linda Hygiene Tab]] - Define the active Hygiene tab.
 
 ## Tech
 
-92. [[tech/README|Tech]] - Keep this deferred until a build decision exists; then define the software artifact, stack, data sources, auth, deployment, and integrations.
+92. [[spec|Tech]] - Keep this deferred until a build decision exists; then define the software artifact, stack, data sources, auth, deployment, and integrations.
 
 ## To-Dos After The First Pass
 
 1. Add an explicit authority order to [[operating-model/README|Operating Model Overview]].
 2. Split active-now folders from approved-future folders in [[source-of-truth/files-and-folders|Files And Folders]].
 3. Mark [[source-of-truth/github|GitHub]] as `not live until configured`, or fully configure it.
-4. Add a root-level folder boundary table covering `operating-model/`, `dashboard/`, `agents/`, `sop-library/`, `source-of-truth/`, `tech/`, `artifacts/`, and `review later/`.
+4. Add a root-level folder boundary table covering `operating-model/`, `dashboard/`, `agent-documentation/`, `sop-library/`, `source-of-truth/`, `tech/`, `artifacts/`, and `review later/`.
 5. Mark `review later/` as non-authoritative until files are restored to the active tree.
 6. Decide whether root `artifacts/` should move into `source-of-truth/artifacts/` or remain generated output.
-7. Shorten [[agents/agent-workflows|Agent Workflows]] wherever a reusable SOP already defines the procedure.
+7. Shorten [[agent-documentation/agent-workflows|Agent Workflows]] wherever a reusable SOP already defines the procedure.
 8. Update [[sop-library/sop-registry|SOP Registry]] after every SOP edit.
 9. Add or update a decision record for every structural resolution that changes authority, folder contracts, backlog truth, dashboard behavior, or implementation scope.
 10. After the docs are filled, run a link-health pass and make sure every hub note has a `Related` section pointing to the right canonical files.

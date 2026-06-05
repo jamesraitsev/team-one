@@ -18,7 +18,7 @@ Ask yourself before changing it:
 - What should agents do when an issue reference is missing?
   Prompt: Answer with the current fallback first: file-only, GitHub-linked, or GitHub-required.
 
-Cross-check [[source-of-truth/files-and-folders|Files And Folders]], [[dashboard/README|Dashboard]], and [[agent-approval-rules|Agent Approval Rules]].
+Cross-check [[source-of-truth/files-and-folders|Files And Folders]], [[2. dashboard/README|Dashboard]], and [[agent-approval-rules|Agent Approval Rules]].
 
 
 This file defines the GitHub backlog and local secret configuration for the source-of-truth system.

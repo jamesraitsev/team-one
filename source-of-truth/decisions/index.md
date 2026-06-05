@@ -27,7 +27,7 @@ This index is the human-readable summary of durable decision records stored unde
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | DR-0001 | [[dr-0001-sop-library-location-and-governance|SOP Library Location And Governance]] | Accepted | 2026-06-01 | [[sop-library-system|SOP Library System]] | None | [[files-and-folders|Files And Folders]], [[github|GitHub]] | None | None | Review when the source-of-truth root or SOP authority model changes |
 | DR-0002 | [[dr-0002-agent-status-runtime-location-and-contract|Agent Status Runtime Location And Contract]] | Accepted | 2026-06-01 | None | None | [[files-and-folders|Files And Folders]], [[github|GitHub]], [[dashboard-model]], [[agent-responsibilities]] | None | None | Review when the source-of-truth root changes or runtime status moves to another authority |
-| DR-0003 | [[dr-0003-linda-repo-health-auditor-and-memory|Linda Repo Health Auditor And Memory]] | Accepted | 2026-06-01 | None | None | [[files-and-folders|Files And Folders]], [[agent-roster|Agent Roster]], [[sop-registry|SOP Registry]] | None | None | Review when Linda's authority, score rubric, or memory location changes |
+| DR-0003 | [[dr-0003-linda-repo-health-auditor-and-memory|Linda Repo Health Auditor And Memory]] | Accepted | 2026-06-01 | None | None | [[files-and-folders|Files And Folders]], [[source-of-truth/agent-status/index|Agent Status Index]], [[agent-roster|Agent Roster]], [[sop-registry|SOP Registry]] | None | None | Review when Linda's authority, status write role, score rubric, or memory location changes |
 
 ## Related
 

@@ -17,7 +17,7 @@ Ask yourself before changing it:
 - What evidence proves the feature is ready for review?
   Prompt: Write the plain-English answer first; add structure only after the meaning is clear.
 
-Cross-check [[testing|Testing]], [[release-checklist|Release Checklist]], [[security-review|Security Review]], and [[tech/README|Tech]].
+Cross-check [[testing|Testing]], [[release-checklist|Release Checklist]], [[security-review|Security Review]], and [[spec|Tech]].
 
 
 Version: `v1.0`

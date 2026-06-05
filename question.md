@@ -33,7 +33,7 @@ Right now the repo is split into six conceptual layers:
 
 - `operating-model/` defines the system rules.
 - `dashboard/` defines a dashboard that reads and acts on those rules.
-- `agents/` defines recurring operator agents.
+- `agent-documentation/` defines recurring operator agents.
 - `sop-library/` defines reusable procedures those agents may use.
 - `source-of-truth/` is supposed to hold live durable records.
 - `tech/` implies an eventual software product or implementation target.
@@ -49,9 +49,9 @@ These are not formatting issues. These are authority issues.
 Overlap to review:
 
 - [[operating-model/README|Operating Model Overview]]
-- [[dashboard/README|Dashboard Specification]]
+- [[2. dashboard/README|Dashboard Specification]]
 - [[source-of-truth/files-and-folders|Files And Folders]]
-- [[tech/README|Tech]]
+- [[spec|Tech]]
 
 Questions:
 
@@ -73,13 +73,13 @@ Overlap to review:
 - [[operating-model/agent-responsibilities|Agent Responsibilities]]
 - [[operating-model/guardrails/guardrails|Guardrails]]
 - [[operating-model/guardrails/approval-boundaries|Approval Boundaries]]
-- [[agents/agent-approval-rules|Agent Approval Rules]]
+- [[agent-documentation/agent-approval-rules|Agent Approval Rules]]
 - [[operating-model/decision-gates|Decision Gates]]
 
 Questions:
 
-1. If an approval rule appears in both `operating-model/` and `agents/`, which one wins?
-2. Should `agents/` restate rules, or only specialize them?
+1. If an approval rule appears in both `operating-model/` and `agent-documentation/`, which one wins?
+2. Should `agent-documentation/` restate rules, or only specialize them?
 3. Are `guardrails`, `approval boundaries`, `agent responsibilities`, and `decision gates` four distinct concepts, or are they partially duplicate views of the same concept?
 4. Which of these files is canonical, and which ones should be derivative summaries?
 
@@ -94,9 +94,9 @@ Resolve explicitly:
 Overlap to review:
 
 - [[operating-model/dashboard-model|Dashboard Model]]
-- [[dashboard/README|Dashboard Specification]]
-- [[dashboard/common-spec|Common Dashboard Spec]]
-- [[dashboard/common-spec|Common Dashboard Spec]]
+- [[2. dashboard/README|Dashboard Specification]]
+- [[common-spec|Common Dashboard Spec]]
+- [[common-spec|Common Dashboard Spec]]
 
 Questions:
 
@@ -115,8 +115,8 @@ Resolve explicitly:
 
 Overlap to review:
 
-- [[agents/agent-workflows|Agent Workflows]]
-- [[agents/agent-roster|Agent Roster]]
+- [[agent-documentation/agent-workflows|Agent Workflows]]
+- [[agent-documentation/agent-roster|Agent Roster]]
 - [[sop-library/README|SOP Library]]
 - [[sop-library/product/backlog-grooming|Backlog Grooming]]
 - [[sop-library/governance/source-of-truth-check|Source Of Truth Check]]
@@ -139,7 +139,7 @@ Resolve explicitly:
 Overlap to review:
 
 - [[source-of-truth/github|GitHub]]
-- [[dashboard/README|Dashboard]]
+- [[2. dashboard/README|Dashboard]]
 - [[operating-model/README|Operating Model Overview]]
 - [[source-of-truth/files-and-folders|Files And Folders]]
 
@@ -185,7 +185,7 @@ Resolve explicitly:
 
 Overlap to review:
 
-- [[agents/memory-and-decision-hygiene|Memory And Decision Hygiene]]
+- [[agent-documentation/memory-and-decision-hygiene|Memory And Decision Hygiene]]
 - [[operating-model/decision-record-system/README|Decision Record System]]
 - [[operating-model/agent-status-schema/README|Agent Status Schema]]
 - [[source-of-truth/files-and-folders|Files And Folders]]
@@ -208,8 +208,8 @@ Resolve explicitly:
 
 Overlap to review:
 
-- [[dashboard/README|Dashboard]]
-- [[tech/README|Tech]]
+- [[2. dashboard/README|Dashboard]]
+- [[spec|Tech]]
 - unresolved placeholders across [[source-of-truth/github|GitHub]]
 
 Questions:
@@ -229,8 +229,8 @@ Resolve explicitly:
 
 Overlap to review:
 
-- [[tech/README|Tech]]
-- [[dashboard/README|Dashboard Specification]]
+- [[spec|Tech]]
+- [[2. dashboard/README|Dashboard Specification]]
 - [[operating-model/README|Operating Model Overview]]
 
 Questions:
@@ -250,7 +250,7 @@ Resolve explicitly:
 
 Review the top-level folders together:
 
-- `agents/`
+- `agent-documentation/`
 - `dashboard/`
 - `operating-model/`
 - `sop-library/`
@@ -263,7 +263,7 @@ Questions:
 2. Which are runtime layers?
 3. Which are implementation layers?
 4. Which are reusable libraries versus instance-specific records?
-5. Could a new person explain the difference between `operating-model/`, `agents/`, and `sop-library/` in under two minutes?
+5. Could a new person explain the difference between `operating-model/`, `agent-documentation/`, and `sop-library/` in under two minutes?
 
 Resolve explicitly:
 
@@ -276,7 +276,7 @@ Resolve explicitly:
 Answer these directly. They are structural.
 
 1. Should `dashboard/` stay separate from `operating-model/`, or is that a false separation?
-2. Should `agents/` remain its own top-level area, or is it really `operating-model/agents/`?
+2. Should `agent-documentation/` remain its own top-level area, or is it really `operating-model/agent-documentation/`?
 3. Should `tech/README.md` exist before implementation starts?
 4. Should open questions live in one place instead of appearing in dashboard and tech contexts separately?
 5. Should agent workflow steps be shortened if SOPs are the real procedure source?
@@ -286,13 +286,13 @@ Answer these directly. They are structural.
 
 Review these pairs together and record a resolution for each pair:
 
-1. [[operating-model/dashboard-model|Dashboard Model]] and [[dashboard/README|Dashboard Specification]]
-2. [[operating-model/agent-responsibilities|Agent Responsibilities]] and [[agents/agent-approval-rules|Agent Approval Rules]]
-3. [[agents/agent-workflows|Agent Workflows]] and [[sop-library/README|SOP Library]]
-4. [[agents/memory-and-decision-hygiene|Memory And Decision Hygiene]] and [[operating-model/decision-record-system/README|Decision Record System]]
-5. [[source-of-truth/github|GitHub]] and [[dashboard/README|Dashboard]]
+1. [[operating-model/dashboard-model|Dashboard Model]] and [[2. dashboard/README|Dashboard Specification]]
+2. [[operating-model/agent-responsibilities|Agent Responsibilities]] and [[agent-documentation/agent-approval-rules|Agent Approval Rules]]
+3. [[agent-documentation/agent-workflows|Agent Workflows]] and [[sop-library/README|SOP Library]]
+4. [[agent-documentation/memory-and-decision-hygiene|Memory And Decision Hygiene]] and [[operating-model/decision-record-system/README|Decision Record System]]
+5. [[source-of-truth/github|GitHub]] and [[2. dashboard/README|Dashboard]]
 6. [[source-of-truth/files-and-folders|Files And Folders]] and the actual `source-of-truth/` directory
-7. [[tech/README|Tech]] and [[dashboard/README|Dashboard Specification]]
+7. [[spec|Tech]] and [[2. dashboard/README|Dashboard Specification]]
 
 For each pair, answer:
 
@@ -309,15 +309,15 @@ Until that is answered, the repo risks continuing to grow as a complete theoreti
 
 ## Opinions And Recommended Resolutions
 
-These opinions are based on the current repo shape, including `AGENTS.md`, `operating-model/`, `dashboard/`, `agents/`, `sop-library/`, `source-of-truth/`, `tech/`, `gtm-council/`, `review later/`, and root `artifacts/`.
+These opinions are based on the current repo shape, including `AGENTS.md`, `operating-model/`, `dashboard/`, `agent-documentation/`, `sop-library/`, `source-of-truth/`, `tech/`, `gtm-council/`, `review later/`, and root `artifacts/`.
 
 ### 1. Is This Repo A Spec, A Live Operating System, Or Both
 
 Opinion: this repo should be treated as a `hybrid`, but with a strict split between governing specs and live records.
 
-1. This repo is a design/specification for the operating system in `operating-model/`, `dashboard/`, `agents/`, `sop-library/`, and `tech/`.
+1. This repo is a design/specification for the operating system in `operating-model/`, `dashboard/`, `agent-documentation/`, `sop-library/`, and `tech/`.
 2. It is already a live system of record only for accepted decisions, agent status indexes, source-of-truth contracts, SOP definitions, and durable artifacts that are intentionally stored here.
-3. The separation rule should be: `source-of-truth/` plus Accepted decision records define current truth; `operating-model/`, `dashboard/`, `agents/`, and `sop-library/` define how the system should operate; `tech/` is deferred target-state design until implementation begins.
+3. The separation rule should be: `source-of-truth/` plus Accepted decision records define current truth; `operating-model/`, `dashboard/`, `agent-documentation/`, and `sop-library/` define how the system should operate; `tech/` is deferred target-state design until implementation begins.
 4. Executable today means file-first documentation operations: decision records, SOP updates, status records, source-of-truth checks, and dashboard specs. GitHub execution, dashboard automation, and app implementation are aspirational until configured and built.
 
 Resolution: keep the repo `hybrid`, but label the live parts explicitly. Do not let future-facing dashboard or tech language imply a capability is already operational.
@@ -326,12 +326,12 @@ Resolution: keep the repo `hybrid`, but label the live parts explicitly. Do not 
 
 Opinion: the repo needs a written precedence order.
 
-1. If an approval rule appears in both `operating-model/` and `agents/`, the global rule in `operating-model/guardrails/` or `operating-model/agent-responsibilities.md` wins. `agents/agent-approval-rules.md` may only specialize within that boundary.
-2. `agents/` should restate only enough to make agent execution clear. It should not define new global approval policy.
+1. If an approval rule appears in both `operating-model/` and `agent-documentation/`, the global rule in `operating-model/guardrails/` or `operating-model/agent-responsibilities.md` wins. `agent-documentation/agent-approval-rules.md` may only specialize within that boundary.
+2. `agent-documentation/` should restate only enough to make agent execution clear. It should not define new global approval policy.
 3. `guardrails`, `approval boundaries`, `agent responsibilities`, and `decision gates` are distinct but overlapping views: guardrails define safety principles, approval boundaries define action classes, agent responsibilities define stage behavior, and decision gates define lifecycle transition evidence.
-4. Canonical files should be: `operating-model/guardrails/guardrails.md` for global safety posture, `operating-model/guardrails/approval-boundaries.md` for approval classes, `operating-model/agent-responsibilities.md` for stage-level agent authority, and `operating-model/decision-gates.md` for lifecycle movement. `agents/agent-approval-rules.md` should be derivative and agent-specific.
+4. Canonical files should be: `operating-model/guardrails/guardrails.md` for global safety posture, `operating-model/guardrails/approval-boundaries.md` for approval classes, `operating-model/agent-responsibilities.md` for stage-level agent authority, and `operating-model/decision-gates.md` for lifecycle movement. `agent-documentation/agent-approval-rules.md` should be derivative and agent-specific.
 
-Resolution: add a short authority note to `operating-model/README.md` and `agents/agent-approval-rules.md` saying agent rules cannot weaken operating-model guardrails.
+Resolution: add a short authority note to `operating-model/README.md` and `agent-documentation/agent-approval-rules.md` saying agent rules cannot weaken operating-model guardrails.
 
 ### 3. What The Dashboard Actually Is Relative To The Operating Model
 
@@ -387,7 +387,7 @@ Opinion: the repo already has the right conceptual split, but it needs one compa
 4. A journal entry should exist without a decision record when the update is progress, observation, blocker movement, or a non-final assumption.
 5. A decision record should exist without a journal entry when a durable decision is made outside a daily run or when the decision is imported from prior approved context.
 
-Resolution: keep `agents/memory-and-decision-hygiene.md` as the practical guide, and make `source-of-truth/files-and-folders.md` point to it for write-boundary examples.
+Resolution: keep `agent-documentation/memory-and-decision-hygiene.md` as the practical guide, and make `source-of-truth/files-and-folders.md` point to it for write-boundary examples.
 
 Definitions:
 
@@ -431,17 +431,17 @@ Resolution: keep `tech/README.md`, add a status note that it is not authoritativ
 
 Opinion: the top-level folders are mostly valid, but `gtm-council/`, `review later/`, and root `artifacts/` need classification.
 
-1. Governing layers: `operating-model/`, `dashboard/`, `agents/`, `sop-library/`, `source-of-truth/`, and `AGENTS.md`.
+1. Governing layers: `operating-model/`, `dashboard/`, `agent-documentation/`, `sop-library/`, `source-of-truth/`, and `AGENTS.md`.
 2. Runtime layers: `source-of-truth/agent-status/` and, once active, `source-of-truth/journals/`, `source-of-truth/projects/`, and GitHub Issues.
 3. Implementation layers: `tech/` and any future app/code folders.
 4. Reusable libraries: `sop-library/` and potentially `gtm-council/` if retained as a reusable evaluation framework. Instance-specific records: `source-of-truth/`, root `artifacts/`, and anything under `review later/`.
-5. A new person could explain `operating-model/`, `agents/`, and `sop-library/` in under two minutes only if the repo adds a short boundary table to the root or operating-model README.
+5. A new person could explain `operating-model/`, `agent-documentation/`, and `sop-library/` in under two minutes only if the repo adds a short boundary table to the root or operating-model README.
 
 Recommended one-sentence purposes:
 
 - `operating-model/`: governing rules for lifecycle, approvals, autonomy, dashboard concepts, decisions, and source-of-truth behavior.
 - `dashboard/`: detailed specification for the decision-centered dashboard subsystem.
-- `agents/`: agent roster, cadence, routing, outputs, and agent-specific operating rules.
+- `agent-documentation/`: agent roster, cadence, routing, outputs, and agent-specific operating rules.
 - `sop-library/`: reusable procedures agents and humans can run across projects.
 - `source-of-truth/`: durable live records and accepted decisions.
 - `tech/`: deferred implementation planning for software build work.
@@ -454,7 +454,7 @@ Resolution: no top-level folder must move immediately. The highest-value change 
 ## Opinions On What To Merge, Split, Or Delete
 
 1. `dashboard/` should stay separate from `operating-model/`; the separation is useful if authority is clarified.
-2. `agents/` should remain top-level because agents are a major subsystem, but it must be explicitly derivative of operating-model guardrails.
+2. `agent-documentation/` should remain top-level because agents are a major subsystem, but it must be explicitly derivative of operating-model guardrails.
 3. `tech/README.md` should exist before implementation starts only as a deferred intake template, not as an active decision source.
 4. Open questions should live in one canonical place for structural questions. Subsystem-specific open questions can remain local if they link to the canonical register when structural.
 5. Agent workflow steps should be shortened as SOPs mature. Agent docs should describe orchestration, routing, status, and stop conditions.
@@ -463,9 +463,9 @@ Resolution: no top-level folder must move immediately. The highest-value change 
 ## Opinions On Required Review Pairs
 
 1. `operating-model/dashboard-model.md` and `dashboard/README.md`: `dashboard-model.md` is canonical for conceptual lifecycle dashboard behavior; `dashboard/README.md` is canonical for the dashboard subsystem spec. Keep both. Reduce ambiguity by adding a note that `dashboard/` implements the model and may not redefine lifecycle authority.
-2. `operating-model/agent-responsibilities.md` and `agents/agent-approval-rules.md`: `agent-responsibilities.md` is canonical for stage-level authority; `agent-approval-rules.md` is derivative and agent-specific. Keep both. Reduce ambiguity by adding precedence language.
-3. `agents/agent-workflows.md` and `sop-library/README.md`: `sop-library/README.md` is canonical for reusable procedures; `agent-workflows.md` is canonical for agent orchestration. Keep both. Reduce ambiguity by replacing repeated procedure details with SOP links.
-4. `agents/memory-and-decision-hygiene.md` and `operating-model/decision-record-system/README.md`: the decision-record system is canonical for durable decisions; memory hygiene is canonical for agent write behavior across status, journals, and decisions. Keep both. Reduce ambiguity by adding a decision/status/journal/artifact boundary table to the source-of-truth contract.
+2. `operating-model/agent-responsibilities.md` and `agent-documentation/agent-approval-rules.md`: `agent-responsibilities.md` is canonical for stage-level authority; `agent-approval-rules.md` is derivative and agent-specific. Keep both. Reduce ambiguity by adding precedence language.
+3. `agent-documentation/agent-workflows.md` and `sop-library/README.md`: `sop-library/README.md` is canonical for reusable procedures; `agent-workflows.md` is canonical for agent orchestration. Keep both. Reduce ambiguity by replacing repeated procedure details with SOP links.
+4. `agent-documentation/memory-and-decision-hygiene.md` and `operating-model/decision-record-system/README.md`: the decision-record system is canonical for durable decisions; memory hygiene is canonical for agent write behavior across status, journals, and decisions. Keep both. Reduce ambiguity by adding a decision/status/journal/artifact boundary table to the source-of-truth contract.
 5. `source-of-truth/github.md` and `dashboard/README.md`: `source-of-truth/github.md` is canonical for GitHub configuration and issue contract; dashboard open questions are derivative build questions. Keep both. Reduce ambiguity by marking GitHub `not live until configured`.
 6. `source-of-truth/files-and-folders.md` and the actual `source-of-truth/` directory: the file contract is canonical, but it currently describes target capacity more than live state. Keep both. Reduce ambiguity by splitting active folders from approved future folders.
 7. `tech/README.md` and `dashboard/README.md`: `dashboard/README.md` is canonical for dashboard requirements; `tech/README.md` is a deferred implementation template. Keep both only if `tech/README.md` is clearly marked deferred.
@@ -478,7 +478,7 @@ The smallest coherent version to run now is:
 2. `source-of-truth/decisions/` as the durable decision layer.
 3. `source-of-truth/agent-status/` as the active runtime status layer.
 4. `sop-library/` as the reusable procedure layer.
-5. `agents/` as curator orchestration specs, not autonomous executors.
+5. `agent-documentation/` as curator orchestration specs, not autonomous executors.
 6. `dashboard/` as a written decision-dashboard spec, not yet an app.
 7. `tech/` as deferred until a build decision is accepted.
 8. GitHub as configured repository storage and future issue backlog, but not the required execution source until the GitHub contract is populated.
@@ -494,14 +494,14 @@ After answering, decide where the durable resolution belongs:
 - a decision record in [[operating-model/decision-record-system/README|Decision Record System]]
 - an update to [[source-of-truth/files-and-folders|Files And Folders]]
 - an update to [[operating-model/README|Operating Model Overview]]
-- an update to [[dashboard/README|Dashboard Specification]]
-- an update to [[tech/README|Tech]]
+- an update to [[2. dashboard/README|Dashboard Specification]]
+- an update to [[spec|Tech]]
 
 ## Related
 
 - [[operating-model/README|Operating Model Overview]]
-- [[dashboard/README|Dashboard Specification]]
+- [[2. dashboard/README|Dashboard Specification]]
 - [[source-of-truth/files-and-folders|Files And Folders]]
 - [[source-of-truth/github|GitHub]]
-- [[dashboard/README|Dashboard]]
-- [[tech/README|Tech]]
+- [[2. dashboard/README|Dashboard]]
+- [[spec|Tech]]

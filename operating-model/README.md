@@ -18,12 +18,12 @@ Ask yourself before changing it:
 - Does any statement here overpromise GitHub, dashboard, agent, or app capabilities that are not live yet?
   Prompt: Mark the item as live now, planned later, or out of scope; do not leave it implied.
 
-Cross-check [[question|question.md]], [[source-of-truth/files-and-folders|Files And Folders]], [[lifecycle]], and [[dashboard/README|Dashboard Specification]].
+Cross-check [[question|question.md]], [[source-of-truth/files-and-folders|Files And Folders]], [[lifecycle]], and [[2. dashboard/README|Dashboard Specification]].
 
 
 This folder defines the operating model for an agent-driven project system. It gives every initiative the same path from a raw idea to a final decision so work can be evaluated consistently, automated safely, and audited later.
 
-Related notes: [[lifecycle]], [[decision-gates]], [[dashboard-model]], [[dashboard/README|Dashboard Specification]], [[agent-responsibilities]]
+Related notes: [[lifecycle]], [[decision-gates]], [[dashboard-model]], [[2. dashboard/README|Dashboard Specification]], [[agent-responsibilities]]
 
 ## Why This Exists
 
@@ -104,7 +104,7 @@ Use one primary GitHub issue per initiative and keep it open through the lifecyc
 | [[agent-responsibilities]] | Stage-by-stage boundary between agent autonomy and human approval. |
 | [[operating-model/agent-status-schema/README|Agent Status Schema]] | Runtime status rules, templates, and dashboard contract for active agents. |
 | [[operating-model/decision-record-system/README|Decision Record System]] | Rules, templates, naming, and workflow for durable load-bearing decisions. |
-| [[agents-overview|Agents Overview]] | Step 8 agent roster, optional schedules, workflows, outputs, and approval boundaries. |
+| [[agent-documentation/agents-overview|Agents Overview]] | Step 8 agent roster, optional schedules, workflows, outputs, and approval boundaries. |
 | [[guardrails|Guardrails]] | Shared autonomy ramp, safe-action rules, and approval-boundary guardrails. |
 | [[source-of-truth/files-and-folders|Files And Folders]] | Canonical file and folder contract for durable knowledge under the repo root `source-of-truth/` folder. |
 | [[source-of-truth/github|GitHub]] | Canonical GitHub backlog and `.env` integration contract. |
@@ -217,7 +217,7 @@ If a later implementation conflicts with this documentation, update the docs fir
 
 - [[lifecycle]]
 - [[decision-gates]]
-- [[dashboard/README|Dashboard Specification]]
+- [[2. dashboard/README|Dashboard Specification]]
 - [[operating-model/agent-status-schema/README|Agent Status Schema]]
 - [[operating-model/decision-record-system/README|Decision Record System]]
 - [[agents-overview|Agents Overview]]

@@ -59,6 +59,8 @@ The following top-level folder is also approved because it is a reusable operati
 
 | Folder | Purpose | Required rule |
 | --- | --- | --- |
+| `.codex/agents/` | Codex runtime custom-agent TOML files | Keep runtime agent instructions in TOML; do not store Obsidian documentation or source-of-truth records here. |
+| `agent-documentation/` | Obsidian-friendly agent documentation, rosters, schedules, workflows, output contracts, and approval rules | Keep documentation synchronized with `.codex/agents/` when runtime agent behavior changes; do not treat documentation profiles as runtime TOML. |
 | `sop-library/` | Shared standard operating procedures used across repos, projects, and initiatives | Keep SOPs categorized, keep `sop-registry.md` current, and do not write initiative-specific outputs here. |
 | `operating-model/guardrails/` | Shared autonomy, safe-action, and approval-boundary rules used across the operating model | Keep approval boundaries explicit, keep autonomy tied to dashboard visibility, and do not store initiative-specific outputs here. |
 
